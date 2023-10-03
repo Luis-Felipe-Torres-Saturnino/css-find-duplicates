@@ -1,0 +1,953 @@
+li {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+/*.gridContainer > .row {
+	margin: 0;
+}*/
+
+.tituloComponente {
+  font-size: 20px;
+
+  color: #20478b;
+
+  /*width: 22rem;*/
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tituloComponenteMedio {
+  font-size: 0.884rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  /*max-width: 12.5rem;*/
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.subTituloComponente {
+  font-size: 16px;
+  font-weight: 400;
+  color: #707070;
+}
+
+.badgeComponente {
+  /*border: 1px solid #B1B1B1; */
+  /*color: #888;
+  background-color: #f5f5f5;*/
+  font-weight: 400;
+  font-size: 0.875rem;
+}
+
+.gridDetalhesComponente {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 0.25rem;
+  /* margin-bottom: 1rem; */
+  margin-top: 1.55rem;
+}
+.detalhesComponente {
+  gap: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+.badgeDetalhesComponente {
+  font-size: 0.875rem;
+  font-weight: 700;
+  /*background-color: #fcfcfc;
+  border: 1px solid #c4c4c4;
+  color: #888;*/
+}
+
+.acessarSalaAula {
+  color: #20478b;
+  /*font-weight: bold; */
+  font-size: 18px;
+}
+
+@media screen and (max-width: 678px) {
+  .tituloComponente {
+    width: 17rem;
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 574px) {
+  .tituloComponente {
+    width: 14rem;
+    font-size: 20px;
+  }
+}
+
+
+.nomeTutor{ 
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: block;
+}
+
+.card{
+  border-radius: 10px;
+  margin-bottom: 7%;
+  height: 100%;
+  border: 0;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+  overflow: hidden;
+}
+
+.card-body{
+  padding-bottom: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ================ TESTE ================ */
+.tituloComponenteMedio{
+  height: 2rem;
+}
+/* ================ TESTE ================ */
+
+.tipo-componente-teorica{
+  width: fit-content;
+  height: 1.63rem;
+  text-align: center;
+  font-size: 0.75rem;
+  color: #18499e;
+  padding: 3px;
+  background: #C2D3FF;
+  border-radius: 5px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  margin-bottom: 2%;
+}
+
+.tipo-componente-pratica{
+  width: fit-content;
+  height: 1.63rem;
+  text-align: center;
+  font-size: 0.75rem;
+  color: #07802f;
+  padding: 3px;
+  background: #c2ffc7;
+  border-radius: 5px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  margin-bottom: 2%;
+}
+
+.tipo-componente-ead{
+  width: fit-content;
+  height: 1.63rem;
+  text-align: center;
+  font-size: 0.75rem;
+  color: #800707;
+  padding: 3px;
+  background: #ffc2c2;
+  border-radius: 5px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  margin-bottom: 2%;
+}
+
+.tipo-componente-piac{
+  width: fit-content;
+  height: 1.63rem;
+  text-align: center;
+  font-size: 0.75rem;
+  color: transparent;
+  padding: 3px;
+  background: transparent;
+  border-radius: 5px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  margin-bottom: 2%;
+}
+
+.badgeComponente{
+  margin-bottom: 5px;
+  color: #707070;
+}
+
+.badgeDetalhesComponente{
+  font-size: 0.8rem;
+  flex-direction: column;
+}
+
+.conteudo-subtitulo{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 0.5rem;
+  /* height: 6.25rem; */
+  overflow-y: hidden;
+}
+
+.conteudo-subtitulo span{
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 5rem;
+}
+
+.conteudo-subtitulo div:first-child{
+  gap: 0.5rem;
+}
+
+.progress{
+  background-color: #bbbbbb;
+  width: 75%;
+  height: 30%;
+}
+
+.bg-progresso-bloqueado{
+  display: none;
+  width: 100%;
+  height: 2px;
+  background-color: #7e7e7e;
+}
+
+.bg-progresso-disponivel{
+  background-color: #ffc2c2;
+}
+
+.bg-progresso-ead{
+  background-color: #007db9;
+}
+
+.conteudo-botoes{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-block: auto;
+}
+
+.card-body > hr,
+.card-body .conteudo-subtitulo > hr{
+  width: -webkit-fill-available;
+  margin: 0;
+}
+
+.conteudo-botoes a{
+  text-decoration: none;
+}
+
+.badgeAva{
+  border: 0;
+  background-color: transparent;
+}
+
+.card-footer{
+  padding: 0;
+}
+
+.btn-componente{
+  width: 100%; 
+  padding: 8px;
+  text-align:center; 
+  cursor: pointer; 
+  color: #313a46;
+}
+
+.btn-componente-esquerda{
+  width: 50%; 
+  padding: 8px;
+  text-align:center; 
+  cursor: pointer; 
+  color: #313a46;
+  border-right: 0.2px solid #d8d8d8;
+}
+
+.btn-componente-direita{
+  width: 50%; 
+  padding: 8px;
+  text-align:center; 
+  cursor: pointer; 
+  color: #313a46;
+  border-left: 0.2px solid #d8d8d8;
+}
+
+.btn-componente,
+.btn-componente-esquerda,
+.btn-componente-direita{
+  font-weight: 500;
+  color: #888888;
+}
+
+.btn-componente:not(.avalie):hover,
+.btn-componente-esquerda:hover,
+.btn-componente-direita:hover{
+  color:#18499e;
+  background-color: #dddddd;
+}
+
+.card-seletor-componente{
+  padding: 1.1rem;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.linha-seletor{
+  display: flex;
+  flex-direction: row;
+  gap: 0.25rem;
+}
+
+.seletor-componente{
+  padding: 1rem;
+  text-align: center;
+  cursor: pointer;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.seletor-componente:hover:not(.ativo){
+  opacity: 0.76;
+}
+
+.linha-seletor .ativo,
+.linha-seletor .inativo{
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.linha-badge-anos{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 1.1rem;
+  gap: 0.5rem;
+}
+
+.linha-badge-anos .badge{
+  font-size: 0.78rem;
+  border-radius: 10px;
+  padding: 0.6rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.linha-badge-anos .badge:hover{
+  opacity: 0.8;
+}
+
+.periodo-componente{
+  display: flex;
+  width: fit-content;
+  height: 1.63rem;
+  text-align: center;
+  font-size: 0.75rem;
+  padding: 3px;
+  border-radius: 5px;
+  margin-bottom: 2%;
+  margin-right: 5px;
+  background-color: #c0d7db;/* #05617040; */
+  color: #055f70;
+}
+
+.periodo-componente span{
+  margin: auto;
+}
+
+/* ============================================ COMPONENTES PROFESSOR ============================================ */
+
+.grid-professor{
+  display: grid; 
+  grid-template-columns: repeat(3,minmax(0,1fr)); 
+  gap: 1rem;
+}
+
+.divComponentesProfessor .card{
+  margin-bottom: 0;
+  height: auto;
+}
+
+.divComponentesProfessor .card-body{
+  padding-bottom: 1rem;
+}
+
+.divComponentesProfessor .conteudo-subtitulo{
+  display: grid;
+  grid-template-columns: repeat(1,minmax(0,1fr)); 
+  gap: 0.4rem;
+  height: auto;
+}
+
+.divComponentesProfessor .badgeComponente{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.divComponentesProfessor .badgeComponente div:first-child{
+  margin-right: 5px;
+}
+
+.divComponentesProfessor .badgeComponente .badgeHorario:not(:nth-child(1),:nth-child(2)){
+  margin-left: 72px;
+}
+
+.divComponentesProfessor .conteudo-botoes{
+  display: grid;
+  grid-template-columns: repeat(5,minmax(0,1fr)); 
+  row-gap: 0.75rem;
+  padding: 1rem;
+  border-radius: 5px;
+  margin-top: 0;
+}
+
+.divComponentesProfessor .conteudo-botoes .indicador{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.divComponentesProfessor .conteudo-botoes .indicador:not(:first-child, :nth-child(6)){
+  border-left: 1px solid #c1c1c1;
+}
+
+.divComponentesProfessor .conteudo-botoes .indicador:not(:last-child, :nth-child(5)){
+  border-right: 1px solid #c1c1c1;
+}
+
+.indicador p{
+  margin-bottom: 0;
+}
+
+.indicador:hover{
+  cursor: pointer;
+}
+
+.indicador:hover p,
+.indicador:hover i{
+  opacity: 0.8;
+}
+
+.grafico-desempenho{
+    display: flex;
+    flex-direction: row;
+}
+
+.eixos{
+    width: 1px;
+    height: 100%;
+}
+
+.eixo-y-legenda{
+    display: grid;
+    grid-template-columns: repeat(1,minmax(0,1fr));
+    margin-left: auto;
+    /* margin-right: 5px; */
+    height: 100%;
+}
+
+.eixo-y-legenda span{
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 0.75rem;
+    /* font-size: 0.536rem; */
+}
+
+.grafico-desempenho svg{
+    width: 198px; 
+    height: 198px;
+    margin-right: auto;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.grafico-legenda{
+    display: flex;
+    flex-direction: column;
+    margin-top: 8px!important;
+}
+
+.grafico-legenda label{
+    font-size: 0.8rem;
+}
+
+
+@media (min-width: 0px) and (max-width: 500px){
+
+  .grid-professor{
+    grid-template-columns: repeat(1,minmax(0,1fr));
+  }
+
+}
+
+@media (min-width: 501px) and (max-width: 1024px){
+
+  .grid-professor{
+    grid-template-columns: repeat(2,minmax(0,1fr));
+  }
+
+}
+
+/* ========================================== FIM COMPONENTES PROFESSOR ========================================== */
+
+/* ============================================= CADASTRO ATIVIDADES ============================================= */
+
+.card-direction{
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.divisao-esquerda,
+.divisao-direita{
+  width: 100%;
+}
+
+.divisao-esquerda label{
+  font-weight: 600;
+}
+
+.agenda-legenda{
+	font-size: 0.875rem;
+	height: fit-content;
+	display: flex;
+	flex-wrap: wrap;
+	border-bottom: 1px solid rgba(0,0,0,.125);
+}
+
+.legenda-filtro{
+	width: calc(100%/2);
+	padding: 15px;
+	background-color: #ffffff;
+	font-size: 1rem;
+	display: flex;
+}
+
+.legenda-filtro:hover{
+	opacity: 0.7;
+	cursor: pointer;
+}
+
+.legenda-filtro label:hover{
+	cursor: pointer;
+}
+
+.legenda-filtro label,
+.legenda-filtro-ativo label{
+	margin: auto;
+}
+
+.legenda-filtro-ativo{ 
+	width: calc(100%/2);
+	padding: 15px;
+	background-color: #e3e3e3;
+	font-size: 1rem;
+	display: flex;
+}
+
+.legenda-vermelho{
+	color: #bb0000;
+}
+
+.legenda-azul{
+	color: #0040dd;
+}
+
+.card-interior-vermelho{
+	width: 100%;
+	border-radius: 5px;
+	background-color: #ffbaba;
+	padding: 2%;
+	margin-bottom: 2%;
+	text-align: left;
+}
+
+.card-interior-azul{
+	width: 100%;
+	border-radius: 5px;
+	background-color: #afc2f1;
+	padding: 2%;
+	margin-bottom: 2%;
+	text-align: left;
+}
+
+.card-interior-azul span,
+.card-interior-vermelho span{
+	display: flex;
+	flex-direction: row;
+}
+
+.card-interior-azul i,
+.card-interior-vermelho i{
+	margin-top: 4px;
+	margin-right: 4px!important;
+}
+
+.container-card-agenda{
+	overflow-y: auto;
+}
+
+.dia-agenda{
+	margin-bottom: 2%;
+}
+
+.dia-evento{
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 3%;
+}
+
+@media(min-width: 1px) and (max-width: 800px){
+  .card-direction{
+    flex-wrap: wrap;
+  }
+
+}
+
+/* =========================================== FIM CADASTRO ATIVIDADES =========================================== */
+
+.quebra-bts-ead{
+  width: 50%;
+  flex-wrap: wrap;
+}
+
+/* ==================================== FREQUENCIA PROFESSOR ==================================== */
+
+.lista-horario-frequencia:not(.lista-horario-frequencia:last-child) {
+  border-bottom: 1px solid #0000002e;
+}
+
+.not-freq{
+  /* gap: 5px; */
+  cursor: pointer;
+  width: calc(80%/3);
+  margin-inline: auto;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.not-freq span:not(.not-freq span:first-child){
+  width: fit-content;
+  margin-inline: auto;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  border-radius: 5px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.num-not-freq{
+  display: flex;
+  border-radius: 5px;
+  font-weight: 500;
+  margin-inline: auto;
+  width: 100%;
+  height: 100%;
+  font-size: 2rem;
+  flex-direction: column;
+}
+.not-freq-verde{
+  color: #3da45b;
+  background-color: #3da45b26;
+}
+.not-freq-amarelo{
+  color: #f59e0b;
+  background-color: #f59e0b2e;
+}
+
+.not-freq-amarelo i{
+  color: #f59e0b!important;
+}
+
+.not-freq-vermelho{
+  color: #ef4444;
+  background-color: #ef444430;
+}
+.card-listagem-horarios-frequencia{
+  padding-bottom: 1rem;
+  padding-inline: 0;
+}
+
+.listagem-horarios-frequencia{
+  overflow-y: auto;
+  gap: 10px;
+  height: 167px;
+  padding-inline: 1rem;
+}
+.frequencia{
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  text-shadow: 0 0 black;
+}
+.btn-voltar{
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  cursor: pointer;
+  width: fit-content;
+}
+
+#lancaFreq i,
+#listaFreq i{
+  height: fit-content;
+  margin: auto;
+}
+
+.info-aluno{
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.info-aluno .pos{
+  width: 1.625rem;
+  text-align: center;
+  margin-block: auto;
+  order: 1;
+}
+
+.info-aluno .nome-ra{
+  display: flex;
+  gap: 10px;
+}
+
+.porcentagem{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 8px;
+  order: 7;
+}
+
+.foto-aluno{
+  border-radius: 3px;
+  border: 1px solid #b3b3b3fc;
+  padding: 1px;
+  order: 2;
+}
+
+.foto-aluno img{
+  width: 50px;
+  height: 50px;
+  border-radius: 3px;
+}
+
+#freqProf .grid-components{
+  display: grid; 
+  gap: 1rem; 
+  grid-template-columns: repeat(3,minmax(0,1fr));
+}
+
+#freqProf .card .card-body{
+  min-height: 255px;
+}
+
+.foto-aluno,
+.nome-curso-polo,
+.ra,
+.porcentagem,
+.curso,
+.pontuacao{
+  margin: auto;
+}
+
+.pontuacao{
+  text-align: center;
+}
+
+.falta {
+  border: 1px solid var(--red);
+  border-radius: 3px;
+  box-shadow: rgb(255 0 0 / 28%) 0px -13px 7px -12px inset, rgb(255 0 0 / 30%) 0px 11px 23px -18px inset;
+  /* background: #ffe0e0!important; */
+}
+
+.curso{
+  width: 11.25rem;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 500;
+  order: 6;
+}
+
+.pontuacao{
+  order: 8;
+}
+
+.ra{
+  width: 6.875rem;
+  order: 3;
+}
+
+.nome-curso-polo{
+  width: 17.5rem;
+  display: flex;
+  order: 5;
+}
+
+.bt-falta{
+  order: 4;
+}
+
+.dependencia{
+  border: 1px solid #ef4444!important;
+}
+
+.card-tipo-conteudo .item-tipo-conteudo{
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.card-tipo-conteudo .item-tipo-conteudo .descricao-tipo-conteudo {
+  width: 50%; 
+  margin-block: auto;
+}
+
+.card-tipo-conteudo .item-tipo-conteudo div{
+  display: flex;
+  width: 16em;
+  justify-content: space-between;
+}
+
+
+.listagem-tipo-conteudo{
+  margin-top: 1rem;
+  border-radius: 5px;
+}
+
+#lancaFreq .card-tipo-conteudo .item-tipo-conteudo:first-child,
+#listaFreq .card-tipo-conteudo .item-tipo-conteudo:first-child{
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+#lancaFreq .card-tipo-conteudo .item-tipo-conteudo:last-child,
+#listaFreq .card-tipo-conteudo .item-tipo-conteudo:last-child{
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+#lancaFreq select option,
+#listaFreq select option{
+  text-transform: uppercase;
+}
+
+@media (min-width: 0px) and (max-width: 330px){
+  .card-seletor-componente{
+    border-top-right-radius: 0px;
+  }
+
+  .not-freq {
+    width: calc(100%/3);
+  }
+
+  .linha-not-freq{
+    flex-wrap: wrap;
+    gap: 1rem!important;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 939px){
+  #freqProf .grid-components{
+    grid-template-columns: repeat(1,minmax(0,1fr))!important;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 919px){
+  .info-aluno{
+    flex-direction: column;
+  }
+
+  .nome-curso-polo{
+    width: 100%!important;
+    text-align: center;
+  }
+
+  .nome-curso-polo span{
+    width: 100%;
+  }
+
+  .ra{
+    text-align: center;
+  }
+
+  .porcentagem{
+    width: 60%!important;
+    gap: 0;
+  }
+
+  .porcentagem span{
+    margin-bottom: 5px!important;
+  }
+
+  .bt-falta{
+    margin-inline: auto;
+    order: 8;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 989px){
+  .card-tipo-conteudo .item-tipo-conteudo{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-tipo-conteudo .item-tipo-conteudo input{
+    order: 5;
+  }
+
+  .card-tipo-conteudo .item-tipo-conteudo .descricao-tipo-conteudo {
+    width: auto !important;
+    text-align: center !important;
+  }
+
+  .card-tipo-conteudo .item-tipo-conteudo div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (max-width: 374px) {
+    .card-tipo-conteudo .item-tipo-conteudo div {
+      flex-direction: column;
+      gap: 4px;
+    }
+  }
+  
+  .card-tipo-conteudo .item-tipo-conteudo div span {
+    width: calc(100%/3);
+    text-align: center;
+    min-width: min-content;
+  }
+  
+  .card-tipo-conteudo .item-tipo-conteudo div span:nth-child(2){
+    order: 1;
+  }
+  
+  .info-conteudo-tipo {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+}
+
+@media (min-width: 940px) and (max-width: 1199px){
+  #freqProf .grid-components{
+    grid-template-columns: repeat(2,minmax(0,1fr))!important;
+  }
+}
+
+/* ================================== FIM FREQUENCIA PROFESSOR ================================== */
+
+.avalie{
+  background-color: #c0d7db;
+  color: #055f70;
+}

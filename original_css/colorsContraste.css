@@ -1,0 +1,163 @@
+:root {
+	--primary-blue: #629bf5;
+    --primary-blue-opc: 98 155 245;
+
+    --secondary-blue: #395177;
+    --secondary-blue-opc: 57 81 119;
+  
+    --primary-green: #3da45b;
+    --primary-green-opc: 61 164 91;
+
+    --primary-red: #ef4444;
+    --primary-red-opc: 239 68 68;
+
+    --primary-yellow: #f59e0b;
+    --primary-yellow-opc: 245 158 11;
+
+    --primary-zinc: #7b8085;
+    --primary-zinc-opc: 123 128 133;
+
+	/*--main: #393668;*/
+	--main: #313A46;
+	--main-hover: #323E50;
+	--lightBlue: #10A5DE;
+	--darkBlue: #20478B;
+	--blueGreen: #17C0DF;
+	--yellow: #FFCC00;
+	--green: #23BC7B;
+	--orange: #FB6340;
+	--pink: #F5365C;
+	--lightPurple: #5E72E4;
+	--purple: #7651CF;
+	--lightPink: #DE87B8;
+	--violet: #7E94CF;
+	--red: #D90B0B;
+	--white: #FFFFFF;
+	--black: #000000;
+
+	--cor-svg-areas: yellow;
+	--cor-fundo-card: black;
+    --titulo-cor: yellow;
+    --titulo-cor-secundaria: black;
+
+	--linha-card: white;
+
+    --btn-footer-card-txt: yellow;
+    --btn-footer-card-bg: black;
+    --btn-footer-card-txt-hover: black;
+    --btn-footer-card-bg-hover: yellow;
+
+	--frequencia-verde: #606060;
+	--frequencia-verde-claro: #3ff23f;
+
+	--frequencia-amarelo: #606060;
+	--frequencia-amarelo-claro: yellow;
+
+	--frequencia-vermelho: #606060;
+	--frequencia-vermelho-claro: #ff1414;
+	
+	--nav-interno-bg: black;
+	--nav-interno-outline: white;
+    --linha-fieldset: #fff;
+
+    --cor-fundo-card-interno: black;
+    --cor-borda-card-interno: white;
+
+    --cor-fundo-comunica-lido: #ffffff1c;
+}
+
+.borderLightBlue {
+	border-color: var(--lightBlue);	
+}
+
+.buttonLightBlue {
+	border-color: var(--lightBlue);	
+	background-color: var(--lightBlue);
+	color: var(--white);
+}
+
+.borderMain {
+	border-color: var(--main);	
+}
+
+.buttonMain, .btn {
+	border-color: white;	
+	background-color: black;
+	color: var(--white);
+}
+
+.buttonMain:hover, .btn:hover {
+	background-color: yellow;
+	color: black;
+    border-color: yellow;
+}
+
+.buttonOpc {
+	border: 1px solid white;	
+	background-color: transparent;
+	color: white;
+}
+
+.buttonOpc:hover {
+	border: 1px solid yellow;
+	background: yellow;
+    color: black;
+}
+
+.status-curso input[type="radio"]:checked + label {
+	border-color: #1AEBFF;	
+	background-color: #1AEBFF;
+	color: black;
+}
+
+.corDropdownAva {
+	background-color: black;
+}
+
+.bordaDropdownAva {
+	border: 1px solid white;
+}
+
+.divDropdown li:hover {
+	background-color: yellow;
+	color: black;
+}
+
+.cor-texto-branco {
+	color: var(--white);
+}
+
+.bg-cor-principal {
+	background-color: var(--black);
+}
+
+.card {
+	background-color: black;
+}
+
+.tituloComponenteMedio {
+	color: white;
+}
+
+hr {
+	background-color: white;
+	opacity: 1;
+}
+
+a {
+	color: yellow;
+	text-decoration: none;
+}
+
+.iconeAmarelo {
+	color: yellow;
+}
+
+.iconeBranco {
+	color: white;
+}
+
+/*a:hover {
+	color: yellow;
+	text-decoration: underline;
+}*/

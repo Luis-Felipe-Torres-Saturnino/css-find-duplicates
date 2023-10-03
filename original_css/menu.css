@@ -1,0 +1,65 @@
+.containerSidenav li {
+  list-style: none;
+  position: relative;
+}
+
+.containerSidenav a {
+  text-decoration: none;
+  position: relative;
+}
+
+img {
+  /* width: 100%; */
+  display: block;
+}
+
+/*.tituloSecretaria {
+	font-size: 18px;
+	font-weight: 500;
+	color: #707070;
+	margin: 0;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}*/
+
+.gridDetalhesComponente {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+.newToolIndicator {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  opacity: 0;
+  transition: .25s all;
+}
+
+#sidenav:hover .newToolIndicator,
+#sidenav.fix .newToolIndicator {
+  opacity: 1;
+}
+
+.newToolIndicator img {
+  height: 100%;
+  transform: scaleX(1.15);
+  width: inherit !important;
+  display: inherit !important;
+  right: 0.313rem;
+  filter: drop-shadow(-6px 0px 6px #ffffff2e);
+}
+
+.newToolIndicator span {
+  position: absolute;
+  top: 0.563rem;
+  right: 0.313rem;
+  font-size: 0.7rem !important;
+  font-weight: 600 !important;
+  text-shadow: 0 0 11px #000000c2;
+  color: white;
+}

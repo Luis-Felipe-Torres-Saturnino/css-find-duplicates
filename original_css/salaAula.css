@@ -1,0 +1,521 @@
+body {
+  /*position: relative;*/
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.navbar {
+  display: none;
+}
+
+.content {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+.gridContainer > .row {
+  margin: 0;
+}
+
+.boxContainer {
+  padding: 1rem;
+  background: #fefefe;
+  box-shadow: 0px 0px 6px 0px #ccc;
+  height: fit-content;
+  margin-bottom: 0.5rem;
+}
+
+.boxSalaAula {
+  padding: 4rem;
+  background: #fefefe;
+  box-shadow: 0px 0px 6px 0px #ccc;
+  height: fit-content;
+  margin-bottom: 5rem;
+  border-radius: 0.5rem;
+}
+
+.boxSalaAula .divTitulo {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.boxSalaAula .titulo {
+  color: #20478b;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.divImagemTopo {
+  position: relative;
+  margin: -4rem -4rem 4rem -4rem;
+  padding: 8rem;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  height: 40rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.divImagemTopo::before {
+  background: url(https://s1.static.brasilescola.uol.com.br/be/vestibular/cb646017da9cc349be6d670ad4f299fd.jpg)
+    no-repeat;
+  filter: grayscale(1) contrast(0.5) brightness(0.8);
+  background-position: center;
+  background-size: cover;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.divImagemTopo .row {
+  position: relative;
+}
+
+.divImagemTopo span {
+  color: #f0720b;
+  font-weight: bold;
+  font-size: 1.625em;
+}
+
+.divImagemTopo hr {
+  border: 1px solid #fff;
+}
+
+.boxSalaAulaBody {
+  padding: 0 8rem;
+}
+
+.divArrowDown {
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.divArrowDown i {
+  color: #ccc;
+  font-size: 2.75em;
+}
+
+.divUnidade {
+  box-shadow: 0px 0px 6px 0px #ccc;
+  padding: 4rem;
+  border-radius: 0.5rem;
+  position: relative;
+}
+
+.divUnidade::after {
+  content: var(--textoUnidade);
+
+  width: fit-content;
+  height: 2rem;
+  position: absolute;
+  top: -1rem;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 1rem;
+  background: #dfdfdf;
+  color: #b9b9b9;
+  font-size: 0.875em;
+  font-weight: 500;
+}
+
+.badgeTipoUnidade {
+  padding: 0.25rem 1.25rem;
+  border-radius: 0.3rem;
+  font-weight: 400;
+  background-color: #8f8b88;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+
+.tituloConteudoUnidade {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.playerVideoUnidade {
+  width: 100%;
+  height: auto;
+}
+
+.playerVideoUnidade {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+.playerVideoUnidade iframe,
+.playerVideoUnidade object,
+.playerVideoUnidade embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.acoesUnidade {
+  padding: 1rem 0;
+  font-size: 1.2rem;
+}
+
+.acoesUnidade .btnLike,
+.btnUnlike {
+  margin: 0 0.2rem;
+}
+
+.acoesUnidade .btnLike {
+  color: #ccc;
+}
+
+.acoesUnidade .btnUnlike {
+  color: #ccc;
+}
+
+.likeInputRadio,
+.unlikeInputRadio {
+  display: none;
+}
+
+.likeInputRadio:checked + label i {
+  color: #2ecc71 !important;
+}
+
+.unlikeInputRadio:checked + label i {
+  color: #e74c3c !important;
+}
+
+.descricaoUnidade {
+  font-size: 1em;
+}
+
+.boxSalaAulaBody .divArrowDown {
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.boxSalaAulaBody .divArrowDown i {
+  color: #ccc;
+  font-size: 1.5em;
+}
+
+.tabelaForum {
+  margin-bottom: 1rem;
+}
+
+.cabecalhoTabelaForum {
+  border: 1px solid #ccc;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.cabecalhoTabelaForum > .row,
+.cabecalhoRespostasForum > .row {
+  display: flex;
+  align-items: center;
+}
+
+.temaForum {
+  font-size: 1.125em;
+}
+
+.disponibilidadeForum {
+  text-align: right;
+  font-weight: bold;
+}
+
+.disponibilidadeForum p {
+  margin: 0;
+}
+
+.anexosForum {
+  margin-top: -1px;
+  border: 1px solid #ccc;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.anexosForum > h5 {
+  font-weight: bold;
+}
+
+.tabelaRespostasForum {
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.cabecalhoRespostasForum {
+  margin-bottom: 1rem;
+}
+
+.fotoCabecalhoForum {
+  width: 4.5rem;
+}
+
+.referenciaRespostaForum {
+  margin: 0;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.divTextoResposta {
+  margin-bottom: 1rem;
+}
+
+.divACQF {
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.questoesACQF {
+  margin-bottom: 1rem;
+}
+
+.mainWallpaper {
+  height: 100vh;
+  background: url(https://imejunior.com.br/wp-content/uploads/2018/03/blue-tech-circuit-board-technology-animated-background-video-graphic-design-hd-1920x1080_ewva7rwie__F0000.png);
+  padding: 14rem 18rem;
+  text-align: right;
+  background-position: center;
+  background-size: cover;
+}
+
+.mainWallpaper .wallpaperTitle {
+  color: #fff;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.mainWallpaper .wallpaperSubtitle {
+  color: #fff;
+  font-size: 1.25em;
+  margin-bottom: 0;
+  font-style: italic;
+}
+
+.tituloComponente {
+  font-size: 1.625em;
+  font-weight: 500;
+  color: #20478b;
+}
+
+.subTituloComponente {
+  font-size: 1em;
+  font-weight: 400;
+  color: #707070;
+}
+
+.badgeComponente {
+  border: 1px solid #b1b1b1;
+  color: #888;
+  background-color: #f5f5f5;
+  font-weight: 400;
+  font-size: 0.875em;
+}
+
+.gridDetalhesComponente {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+.badgeDetalhesComponente {
+  background-color: #fcfcfc;
+  border: 1px solid #c4c4c4;
+  font-size: 1.125em;
+  color: #888;
+}
+
+.acessarSalaAula {
+  color: #20478b;
+  font-weight: bold;
+  font-size: 1.125em;
+}
+
+.list-group {
+  border-radius: 0;
+  transition: all 0.25s;
+  padding-inline: .5rem;
+}
+
+.list-group a > i,
+.list-group a > span {
+  color: #707070;
+}
+
+.list-group-item {
+  border: none;
+}
+
+.list-group-item.list-group-item-action.active {
+  background: none;
+  font-weight: bold;
+  /*border-right: 5px solid #707070;*/
+  border-right: 5px solid #204888;
+  background-color: #eaf2ff;
+  transition: background-color 0.25s;
+}
+
+.list-group-item.list-group-item-action.active > i,
+.list-group-item.list-group-item-action.active > span {
+  color: #204888;
+}
+
+.atividade-feita {
+  text-align: center;
+  padding-top: 40px;
+  display: none;
+}
+
+.btn-prova {
+  text-align: center;
+  padding-top: 40px;
+}
+
+.separador {
+  display: block;
+  text-align: center;
+}
+
+.separador h1 {
+  border-radius: 0.5rem;
+  background: #204888;
+  color: #fff;
+  padding: 8px;
+  font-weight: bold;
+  text-align: center;
+  display: block;
+  font-size: 1.5em;
+  max-width: 912px;
+  margin: 0 auto 4rem;
+}
+
+.navegacao-semanas {
+  padding: 0px;
+}
+
+.navegacao-semanas ul {
+  display: flex;
+  text-align: center;
+  padding: 0px;
+  margin-bottom: 5rem;
+}
+
+.navegacao-semanas ul li:first-child {
+  text-align: right;
+}
+
+.navegacao-semanas ul li:last-child {
+  text-align: left;
+}
+
+.parentItemMenu * {
+  pointer-events: none;
+}
+
+@media only screen and (max-width: 800px) {
+  audio {
+    width: 100%;
+  }
+
+  .navbar {
+    display: flex;
+  }
+
+  .mainWallpaper {
+    padding: 6rem 2rem;
+  }
+
+  .boxSalaAula {
+    padding: 1rem;
+  }
+
+  .boxSalaAulaBody {
+    padding: 0;
+  }
+
+  .divImagemTopo {
+    margin: -1rem -1rem 2rem -1rem;
+    padding: 2rem;
+  }
+
+  .divUnidade {
+    padding: 1rem;
+  }
+
+  .acoesUnidade {
+    font-size: 1rem;
+  }
+
+  .acoesUnidade .row {
+    display: flex;
+    align-items: center;
+  }
+
+  .boxSalaAulaBody .divArrowDown {
+    padding: 2rem 0;
+  }
+
+  .disponibilidadeForum {
+    text-align: left !important;
+  }
+
+  .anexosForum {
+    text-align: end;
+  }
+
+  .fotoCabecalhoForum {
+    width: 2.5rem;
+  }
+
+  .referenciaRespostaForum {
+    padding: 0.25rem;
+  }
+
+  .divACQF button:first-child {
+    margin-bottom: 0.25rem;
+  }
+
+  .divACQF .row:last-child {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tituloConteudoUnidade {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,98 @@
+.imgCursos {
+	width: 100%;
+	display: block;
+}
+
+.gridContainer > .row {
+	margin: 0;
+}
+
+.tituloCurso {
+	font-size: 1.25rem;
+}
+
+.status-curso {
+	display:flex;
+	padding: 0;
+	flex-wrap:wrap;
+}
+
+.status-curso input[type="radio"] {
+	display: none;
+}
+
+.status-curso input[type="radio"] + label {
+	padding: 0.75rem;
+    border-radius: 0.188rem;
+	margin: 0 0.5rem;
+	/*background: none;*/
+	/*border: 1px solid #404c5a;*/
+	/*color: #404c5a;*/
+	cursor: pointer;
+	transition: all .25s;
+	display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    /*background-color: transparent;*/
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.status-curso input[type="radio"] + label:hover {
+	/*background: #e7edff;
+	color: #404c5a;*/
+}
+
+.status-curso input[type="radio"] + label:first-child {
+	margin-left:0px;
+}
+
+.status-curso input[type="radio"]:checked + label {
+	/*background:#404c5a;
+	color: #FFF;*/
+}
+
+.acessar-curso {
+	font-weight: 500;
+	padding: .375rem .75rem;
+	font-size: 1rem;
+	/*background :#393668;
+	color: #fff;*/
+	transition: background .25s
+}
+
+.acessar-curso:hover {
+	/*background: #1c185d;
+	color: #fff;*/
+}
+
+/*.main {
+	height: auto;
+}*/
+
+.buttonOpcCurso {
+	width: 9rem;
+}
+
+@media (max-width: 576px) {
+	.status-curso {
+		flex-direction: column;
+	}
+
+	.status-curso input[type="radio"] + label {
+		margin: 0 0;
+	}
+
+	.buttonOpcCurso {
+		width: auto;
+	}
+}

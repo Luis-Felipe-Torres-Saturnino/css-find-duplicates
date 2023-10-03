@@ -1,0 +1,1229 @@
+/* CSS com os estilos padrão do AVA. */
+
+body {
+  background-color: #f5f6f9;
+}
+
+/* Barra lateral principal */
+
+.sidenavPrincipal{
+  background: linear-gradient(180deg, #242a33f5 0, #313a46eb 60%, #394452ba);
+  box-shadow: 0 2px 22px 0 rgb(0 0 0 / 20%), 0 2px 30px 0 rgb(0 0 0 / 35%);
+}
+
+.sidenavPrincipal i:not(.fa-sign-out-alt):not(.fa-chevron-down), .sidenavPrincipal a.menu-ativo, .sidenavPrincipal li.menu-ativo{
+  color: #4f87d1!important;
+}
+
+.sidenavComponentes{
+  background: linear-gradient(180deg,#243233f5 0,#314546eb 60%,#39524dba);
+  box-shadow: 0 2px 22px 0 rgb(0 0 0 / 20%), 0 2px 30px 0 rgb(0 0 0 / 35%);
+}
+
+.sidenavComponentes i:not(.fa-sign-out-alt):not(.fa-chevron-down), .sidenavComponentes a.menu-ativo, .sidenavComponentes li.menu-ativo{
+  color: #67e3a7!important;
+}
+
+.sidenavSalaAula{
+  background: linear-gradient(180deg,#353325f5 0,#413f2eeb 60%,#514f38ba);
+  box-shadow: 0 2px 22px 0 rgb(0 0 0 / 20%), 0 2px 30px 0 rgb(0 0 0 / 35%);
+}
+
+.sidenavSalaAula i:not(.fa-sign-out-alt):not(.fa-chevron-down), .sidenavSalaAula a.menu-ativo, .sidenavSalaAula li.menu-ativo{
+  color: #e3a367!important;
+}
+
+.sidenav a {
+  color: white;
+}
+
+.sidenav a:not(.sidenav a:last-child){
+  /* border-bottom: 1px solid rgb(124 129 136 / 25%); */
+}
+
+.sidenav a:hover{
+  opacity: 0.8;
+}
+
+.sidenav ul li{
+  /* border-bottom: 1px solid rgb(124 129 136 / 25%); */
+  color: white;
+}
+
+.sidenav ul li:hover{
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.sidenavPrincipal ul li{
+  /* background-color: #242A33; */
+}
+
+.sidenavPrincipal ul li:hover {
+  background-color: #ffffff05;
+}
+
+.subSideMenu {
+  background-color: #242A33;
+}
+
+
+.sidenavComponentes ul li{
+  background-color: #1f2d2e;
+}
+
+.sidenavSalaAula ul li{
+  background-color: #332e24;
+}
+
+.sidenavDropdown summary {
+  color: #959ca0;
+}
+
+.sidebar a,
+.navbarAva a {
+  color: #204888;
+}
+
+.sidenavLinkActive {
+  color: #fff !important;
+}
+
+.menuSelecionado {
+  color: #fefefe !important;
+}
+
+/* Fim da barra lateral principal */
+
+/* Cabeçalho */
+.navbarAva {
+  background: #ffffff;
+  box-shadow: rgb(0 0 0 / 4%) 0px 4px 20px, rgb(179 179 179 / 23%) 0px 4px 6px;
+}
+
+#bt-sideMenu #navToggle .fa-times{
+  color: white;
+}
+
+.centralLogo {
+  width: auto;
+  height: 2.875rem;
+  opacity: 0;
+  transition: 0.1s;
+}
+
+.userPicture {
+  width: 3.125rem;
+  height: 3.125rem;
+  border-radius: 50%;
+}
+
+.divBtnAcessibilidade button {
+  font-size: 0.75rem;
+  padding: 0.313rem;
+}
+
+.cabDescrCurso {
+  color: #20478b;
+}
+
+#pontComp, #freqComp, #diarioComp {
+  background-color: #fff;
+}
+
+.rowTituloGeral {
+  /* background-color: #fff; */
+}
+
+/* .rowTituloGeral > div:last-child {
+  background-color: #fff;
+} */
+
+.rowTituloGeral > div:first-child {
+  background: linear-gradient(90deg, #242a33 0, #313a46 60%, #394452);
+}
+
+.rowTituloGeral > div:first-child::after {
+  background-color: #394452a6;
+}
+
+.rowTituloGeral > div:first-child::before {
+  background-color: #38435087;
+}
+
+.showMobile .dropDownPerfilButton {
+  background-color: #fff;
+}
+
+.dropdownMenuPerfil {
+  margin: -1rem;
+  padding: 1rem;
+  background-color: #f8f9fa;
+}
+
+.menuPerfilNome {
+  font-weight: bold;
+}
+
+.dropdownMenuPerfil .menuPerfilRaIngresso,
+.menuPerfilEmail {
+  font-size: 0.75rem;
+}
+
+.containerPrincipalAva {
+  outline: none;
+  overflow-x: overlay;
+}
+
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -1px;
+}
+
+.mobPerfilConfigs {
+  background-color: #fff;
+}
+.mobPerfilConfigs #mobPerfilPicture {
+  border-color: #fff;
+}
+.dropdownMenuPerfil #perfilContent {
+  background-color: #fff;
+}
+
+#dropdownMenuPerfil,
+.mobPerfilConfigs > div::before {
+  background-color: #e1e9f5;
+}
+
+#dropdownMenuPerfil .dropDownButton {
+  background-color: #c7d6ed;
+}
+
+#dropdownMenuPerfil .dropDownButton #arrow,
+#dropdownMenuPerfil .dropDownButton #times {
+  stroke: #5b7fb9;
+  color: #5b7fb9;
+}
+
+.mobPerfilConfigs #mobPerfilConfigsBack,
+.mobPerfilConfigs .mobConfigList a,
+.mobPerfilConfigs .menuPerfilNome {
+  color: #5b7fb9;
+}
+
+.mobPerfilConfigs .mobConfigList a:not(:last-of-type) {
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.dropdownPerfil a.modeMenuOpt {
+  background-color: var(--main) !important;
+  color: #fff;
+}
+
+.dropdownPerfil a.exitMenuOpt {
+  background-color: #ff5858 !important;
+  color: #fff;
+}
+
+.perfilInfoTexts {
+  color: #444;
+}
+
+/* .sidebar a,
+.navbarAva a {
+  background-color: #f8f9fa;
+} */
+
+.dropdownPerfil {
+  background-color: #e1e9f5;
+}
+
+.dropdownPerfil a {
+  background-color: #c7d6ed !important;
+  color: #212529;
+}
+/* Fim do cabeçalho */
+hr.hrDiv {
+  background: linear-gradient(90deg, transparent, #000000de 10%, #000000de 90%, transparent 100%);
+}
+/* Área (div) principal do AVA */
+
+.navigation-overlay{
+  background-color: #00000073;
+}
+
+.divisor-card-redirecionamento{
+  background: #00000042; 
+  box-shadow: rgb(0 0 0 / 24%) 0px 0px 2px;
+}
+
+/* Fim da área (div) principal do AVA */
+
+/* Barra de rolagem customizada */
+*::-webkit-scrollbar-track {
+  /* -webkit-box-shadow: inset 0 0 0.375rem rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 0.375rem rgba(0, 0, 0, 0.3);
+  background-color: #f5f5f5; */
+
+  -webkit-box-shadow: inset 0 0 0.375rem rgb(0 0 0 / 30%);
+    box-shadow: inset 0 0 0.375rem rgb(0 0 0 / 24%);
+    background-color: rgb(0 0 0 / 0%);
+}
+
+*::-webkit-scrollbar {
+  /* background-color: #f5f5f5; */
+  background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  /* -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 0.375rem rgba(0, 0, 0, 0.3);
+  background-color: #204888; */
+
+  -webkit-box-shadow: inset 0 0 6px rgb(0 0 0 / 30%);
+  box-shadow: inset 0 0 0.375rem rgb(0 0 0 / 30%);
+  background-color: #204888;
+}
+
+.sidenavComponentes *::-webkit-scrollbar-thumb {
+  background-color: #5bc191;
+}
+
+.sidenavPrincipal *::-webkit-scrollbar-thumb {
+  background-color: #446ea4;
+}
+
+.sidenavSalaAula *::-webkit-scrollbar-thumb {
+  background-color: #d79b63;
+}
+/* Fim da barra de rolagem customizada */
+
+/* "LOADER" */
+.loader {
+  background-color: #f6f6f6;
+}
+
+/* .loader > div {
+  border: 0.938rem solid #dddddd;
+  border-top-color: #204888;
+} */
+
+.texto-loader {
+  color: #204888;
+}
+/* FIM "LOADER" */
+
+.slideBottomToTop {
+  background-color: #fff;
+  color: #1c71f9;
+}
+
+.badgeAvaliacao {
+  background-color: #646e7c;
+}
+
+.slideBottomToTop::before {
+  background-color: #1c71f9;
+}
+
+.slideBottomToTop:hover {
+  color: #f1f1f1 !important;
+}
+
+.underlineMotion::before {
+  background-color: #1c71f9;
+}
+/* SALA DE AULA ============================================================== */
+
+#cabecalhoTitle .titleText {
+  color: #1c71f9;
+}
+
+#cabecalhoSalaAula .sairSala {
+  background: #ef4444;
+  color: #fff ;
+}
+
+#progressBarSemanas .abertas {
+  background-color: #1c71f9;
+}
+
+#progressBarSemanas .abertas span {
+  color: #1c71f9;
+}
+
+#progressBarSemanas .fechadas {
+  background-color: #eff0f0; 
+}
+
+#parentDiv #proxObj, 
+#parentDiv #prevObj,
+#altSemana .backToSem {
+  background-color: #fff;
+  border: 1px solid rgba(0,0,0,.125);
+}
+
+#proxObj i, #prevObj i {
+  color: #4789f2;
+}
+
+#containerSeletores {
+  background-color: #fff;
+  box-shadow: rgb(149 157 165 / 20%) 0px 0px 4px 0px; 
+  border: 1px solid rgba(0,0,0,.125); 
+}
+
+.seletores .seletorObj {
+  border: 1px solid rgba(0,0,0,.125);
+  background-color: #7a80871f;
+}
+
+.seletores .seletorObj.selected {
+  color: #fff !important;
+  background-color: #4789f2 !important;
+}
+
+.seletores .seletorObj.readed {
+  color: #4789f2;
+  background-color: #4789f236;
+}
+
+#expandObjs .expandButton {
+  background-color: #fff;
+}
+
+#expandObjs > div:first-child {
+  background: linear-gradient(90deg, transparent, 25%, white);
+}
+
+.objItem .objTittle {
+  color: #4789f2;
+}
+
+#altSemana .previousSem,
+#altSemana .nextSem {
+  background-color: #4789f2;
+  border: 1px solid rgba(0,0,0,.125);
+  color: #fff;
+}
+
+#lerMais:hover {
+  color: #1c71f9 !important;
+}
+
+#cabDescrCurso + span {
+  color: #4789f2;
+}
+
+.headerObjCard .backToSem {
+  background-color: #fff;
+  color: #1c71f9;
+}
+
+.headerObjCard .backToSem:hover {
+  background-color: #1c71f9;
+  color: #fff;
+}
+
+.objItem .divUnidade .badgeAvaliacao {
+  background-color: #3f4348;
+}
+
+/* FIM SALA DE AULA ============================================================== */
+
+/* ================================== CIRCLE ==================================== */
+
+.icon-circle.blue::before {
+  background-image: linear-gradient(195deg,#05a7ff,#0A27FC);
+}
+
+.icon-circle.red::before {
+  background-image: linear-gradient(195deg,#ff2c2c,#9d0000);
+}
+
+.icon-circle.orange::before {
+  background-image: linear-gradient(195deg,#ff7e13,#9f4b08);
+}
+
+.icon-circle.green::before {
+  background-image: linear-gradient(195deg,#1CFF01,#0D8000);
+}
+
+.icon-circle.yellow::before {
+  background-image: linear-gradient(37deg,#b9b902,#FFFF00);
+}
+
+.icon-circle.grey::before {
+  background-image: linear-gradient(195deg,#D9D9D9,#666666);
+}
+
+/* ============================ -FIM- CIRCLE -FIM- ============================== */
+/* ============================================ GESTÃO - ALUNOS ============================================ */
+
+/* LISTAGEM CURSOS */
+#listagemAlunos #legendaListagem, #listagemCursos #legendaListagem {
+  background-color: #fff;
+}
+
+.avaDivTable .avaTableRow {
+  background-color: #fff;
+}
+
+.avaDivTable.zebra > .avaTableRow:nth-child(odd) {
+    background-color: #d9d7d7;
+}
+
+#listagemCursos #totalCountsAlunos {
+  background-color: #fff;
+}
+
+.avaDivTable .avaTableRow:hover:not(.avaDivTable .divJuntaRow .avaTableRow:hover),
+.avaDivTable .divJuntaRow:hover *:not(.avaDivTable .divJuntaRow:hover div span),
+.avaDivTable .divJuntaRow:hover *:not(.avaDivTable .divJuntaRow:hover div *){
+  background-color: #0000001a;
+}
+
+/* LISTAGEM MOVIMENTOS */
+#listagemMovimentos #searchAlunoMov {
+  background-color: #fFF;
+}
+
+#movDestaques .cardMovDestaque {
+  background-color: #fff;
+}
+
+#movDestaques .cardMovDestaque .titleCardMov {
+  color: #1f2733e0;
+}
+
+/* LISTAGEM DE ALUNOS */
+#listagemAlunos .rowAluno .alunoDesc {
+  color: #000000c7;
+}
+
+/* PRONTUÁRIO DO ALUNO */
+#detalhesAlunos #contentDetAlunos #headExtends {
+  background-color: #fff;
+}
+
+#detalhesAlunos #headeDetAlunos .infoNome span:last-child {
+  color: #1f2733e0;
+}
+
+#detalhesAlunos #headeDetAlunos img {
+  border: 3px solid #fff;
+}
+
+#contentDetAlunos #headExtends #freqGeral, #contentDetAlunos #headExtends #pontGeral {
+  background-color: #d8d9dc59;
+}
+
+#contentDetAlunos #headExtends .itemDado {
+  background-color: #eeeff2;
+  color: #1f2733e0;
+}
+
+#detalhesAlunos #headeDetAlunos #buttonsHead button {
+  color: #3a414c;
+}
+
+#detalhesAlunos #headeDetAlunos #buttonsHead button:hover {
+  background-color: #00000021;
+}
+
+#contentDetAlunos #bodyDetAlunos .sectionData {
+  background-color: #fff;
+}
+
+#contentDetAlunos #bodyDetAlunos .sectionTittle {
+  color: #1f2733a3;
+}
+
+#detalhesAlunos .avaDivTable .avaTableRow:nth-child(odd) {
+  background-color: #e9e9e9 !important;
+}
+
+#detalhesAlunos .avaDivTable .avaHeadTable {
+  color: #1f2733e0;
+}
+
+/* ====================================== -FIM- GESTÃO - ALUNOS -FIM- ====================================== */
+
+/* Outros elementos */
+.tituloGeral {
+  color: #fff;
+}
+
+.subTituloCor {
+  color: #15123b;
+}
+
+.tituloSubmenu {
+  color: #707070;
+}
+
+.container-card-ava h2 {
+  color: currentColor;
+}
+
+.card-ava {
+  background: #fff;
+  box-shadow: rgb(149 157 165 / 20%) 3px 3px 4px 0px;
+}
+
+.card-ava-alt {
+  background: #313a46;
+  color: #fff;
+}
+
+.item-card-ava-2 div:hover {
+  opacity: 0.7;
+}
+
+.badgeAva {
+  border: 1px solid #b1b1b1;
+  color: #888;
+  background-color: #f5f5f5;
+}
+
+.boxContainer .card {
+  border-radius: 0.5rem;
+}
+
+.sombra {
+  box-shadow: 0px 1px 0.375rem 0px #ddd;
+}
+
+.divDropdown {
+  z-index: 98;
+  box-shadow: 0px 0.5rem 1rem 0px rgb(0 0 0 / 20%);
+}
+
+.paginacao-ava .pagination > li > a,
+.paginacao-ava .pagination > li.disabled > a {
+  background-color: var(--main);
+  color: var(--white);
+  border: none;
+}
+
+.paginacao-ava .pagination > li > a:hover {
+  background-color: var(--main-hover);
+}
+
+.paginacao-ava .pagination > li.disabled > a {
+  opacity: 0.8;
+}
+
+.paginacao-ava .pagination > li.active > a {
+  background-color: var(--main);
+  color: white;
+  opacity: 0.8;
+  cursor: default;
+}
+
+.img-logo-uniube-1:before {
+  content: url(/template/img/logo_uniube_novo.png);
+}
+
+.img-logo-google:before {
+  content: url(/imagem/google-logo.png);
+}
+
+.boxContainer {
+  background: #f5f6f9;
+}
+
+.boxSalaAula {
+  background: #fefefe;
+  box-shadow: 0px 0px 6px 0px #ccc;
+}
+
+.boxSalaAula .titulo {
+  color: #20478b;
+}
+
+.separador h1 {
+  background: #204888;
+  color: #fff;
+}
+
+/* .divUnidade::after {
+  background: #828282;
+} */
+
+.badgeTipoUnidade {
+  background-color: #8f8b88;
+}
+
+.divArrowDown i {
+  color: #ccc;
+}
+
+/* .divUnidade {
+  box-shadow: 0px 0px 6px 0px #ccc;
+} */
+
+.divImagemTopo span {
+  color: #f0720b;
+}
+
+.original {
+  color: grey;
+}
+
+.like {
+  color: var(--bs-green);
+}
+
+.deslike {
+  color: var(--orange);
+}
+
+.tablerow {
+  display: flex;
+}
+.tablecol {
+  flex-grow: 1;
+}
+
+#iniciacaoCient .cardTittle {
+  color: #1b4d81;
+}
+
+/* BADGES INFORMATIVOS */
+
+	/* CLASSE PARA PADRONIZAR AS CORES DOS BADGES */
+	.badge-informativo{
+		background-color: #fff;
+    box-shadow: rgb(149 157 165 / 20%) 3px 3px 4px 0px;
+    border: 1px solid rgba(0,0,0,.125);
+	}
+
+  #badge-mobile{
+    border: 1px solid rgba(0,0,0,.125);
+  }
+
+/* FIM BADGES INFORMATIVOS */
+
+.calendario{
+  background-color: white;
+}
+
+.mes{
+  background-color: rgb(0 0 0 / 2%);
+  border-bottom: 1px solid rgba(0,0,0,.125);
+}
+
+.legenda-vermelho{
+	color: #bb0000;
+}
+
+.legenda-verde{
+	color: #008f18;
+}
+
+.legenda-laranja{
+	color: #f56b00;
+}
+
+.legenda-azul{
+	color: #0040dd;
+}
+
+.user-card-interior{
+	background-color: #e3e3e3a1;
+
+	/* ========== GLASSMORPHISM ========== */
+	border: 1px solid rgba(0, 0, 0, 0.037);
+  backdrop-filter: blur( 6px );
+  -webkit-backdrop-filter: blur( 6px );
+  box-shadow: 0 8px 32px 0 rgb(0 0 0 / 12%); 
+}
+
+.card{
+  box-shadow: rgb(149 157 165 / 20%) 3px 3px 4px 0px;
+  flex: 1;
+}
+
+#info_momento .card-footer{
+  background-color: rgb(0 0 0 / 5%);
+}
+
+.btn-componente.ativo,
+.btn-componente-esquerda.ativo,
+.btn-componente-direita.ativo{
+    color: #1c71f9;
+    background-color: #fff;
+}
+
+.btn-acesso{
+  color: #15123b;
+  background-color: #f7f7f7;
+  border-top: 1px solid rgba(0,0,0,.125);
+}
+
+.btn-acesso:hover{
+  color: #18499e;
+  background-color: #e7e7e7;
+}
+
+#card-curso .card-title{
+  text-shadow: 0px 0px 17px rgb(255 255 255);
+}
+
+#curso_percent_nao_concluido{
+  fill: #c5c5c5;
+}
+
+#curso_percent_em_progresso{
+  stroke: #394452;
+}
+
+#curso_percent_concluido{
+  stroke: #667991;
+}
+
+#circle_cor_card{
+  fill: #ffffffcc;
+}
+
+.porc-concluido i{
+  color: #667991;
+  text-shadow: 0px 0px 4px #888888;
+}
+
+.porc-em-progresso i{
+  color: #394452;
+  text-shadow: 0px 0px 4px #888888;
+}
+
+.porc-nao-concluido i{
+  color: #c5c5c5;
+  text-shadow: 0px 0px 4px #888888;
+}
+
+.indicadores-componente{
+  background: #f8f9fa;
+  box-shadow: rgb(149 157 165 / 20%) 3px 3px 4px 0px;
+}
+
+#atalhos_informativos .card .card-interno{
+  background-color: #f3f3f3;
+}
+
+#atalhos_informativos .card h2:first-child,
+#listagemOportunidades .card h2:first-child,
+.avaModalDialog .card h2:first-child{
+  color: #1b4d81;
+}
+
+.card h2.titulo-cor:first-child,
+.elemento h2.titulo-cor,
+span.titulo-cor,
+i.titulo-cor,
+label.titulo-cor{
+  color: #1b4d81;
+}
+
+.aulas-hoje-frequencia{
+  background-color: #cfcfcf;
+}
+
+.card-interno .aulas-hoje-mostradores i,
+.card-interno .aulas-hoje-icones i{
+  color: #1b4d81;
+}
+
+.divComponentesProfessor .conteudo-botoes .indicador{
+  color: #707070;
+}
+
+.eixos{
+  fill: #313a46;
+}
+
+.faltas-justificadas{
+  background-color: #d1e7dd;
+}
+
+.faltas-naojustificadas{
+  background-color: #f8d7da;
+}
+
+.faltas-modifjustif{
+  background-color: #cfe2ff;
+}
+
+.btnAltoContraste{
+  background-color: #313a46;
+  color: white;
+}
+
+.btnAltoContraste:hover{
+  background-color: #667991;
+  color: #313a46;
+}
+
+.card-seletor-componente{
+  background-color: #d6d9dd;/*#c3c4c6;*/
+}
+
+.seletor-componente{
+  text-shadow: 0px 0px 2px #ccc;
+}
+
+.linha-seletor .ativo{
+  background-color: #d5d8dc;/* #c3c4c6; */
+  color: #026e83;/* #074d5a; */
+}
+
+.linha-seletor .inativo{
+  background-color: #c3c4c6;/* #9b9b9b; */
+  color: #074d5a;
+}
+
+
+.linha-seletor .ativo2{
+  background-color: #d5d8dc;/* #c3c4c6; */
+  color: #4f87d1;/* #074d5a; */
+}
+
+.linha-seletor .inativo2{
+  background-color: #c3c4c6;/* #9b9b9b; */
+  color: #3365a7;
+}
+
+.linha-badge-anos .ativo{
+  background-color: #ef4444c4;
+}
+
+.linha-badge-anos .inativo{
+  background-color: #055f70ba;/* #055f70; */
+}
+
+.neon-effect-in-amarelo {
+  color: #f59e0b; 
+  background-color: #f59e0b2e; 
+  box-shadow: inset #f59e0b47 0px 0px 7px 2px;
+}
+
+.neon-effect-in-roxo {
+  color: #ba33ff; 
+  background-color: #ba33ff30; 
+  box-shadow: inset #ba33ff47 0px 0px 7px 2px;
+}
+
+.neon-effect-in-azul {
+  color: #1c71f9; 
+  background-color: #1c71f930;
+  box-shadow: inset #1c71f947 0px 0px 7px 2px;
+}
+
+.neon-effect-in-verde {
+  color: #3da45b; 
+  background-color: #3da45b26; 
+  box-shadow: inset #3da45b47 0px 0px 7px 2px;
+}
+
+.neon-effect-in-laranja {
+  color: #ef7b44; 
+  background-color: #ef7b4433;
+  box-shadow: inset #ef7b4447 0px 0px 7px 2px;
+}
+
+.neon-effect-in-vermelho {
+  color: #ef4444; 
+  background-color: #ef444430;
+  box-shadow: inset #ef444447 0px 0px 7px 2px;
+}
+
+/* CONTAINER TABS */
+.groupPages {
+  background-color: #d6d9dd;
+}
+
+.containerTabs .tabs > div {
+  background-color: #c3c4c6;
+  color: #074d5a;
+}
+
+.containerTabs .tabs > div.sel {
+  background-color: #d5d8dc;
+  color: #026e83;
+}
+/* fim CONTAINER TABS fim */
+
+/* =================================== FREQUÊNCIA =================================== */
+
+.img-barra-frequencia-url{
+  content: url("/programas/frequencia/imagens/barraporcentagem.gif");
+}
+
+.conteudo-item strong{
+  opacity: 0.65;
+}
+
+/* ================================= FIM FREQUÊNCIA ================================= */
+.diarios .card .info i{
+  color: #476078;
+}
+
+#lancaFreq .info-aluno:nth-child(odd),
+#listaFreq .info-aluno:nth-child(odd){
+  background-color: #f5f5f5;
+}
+
+#lancaFreq i:not(.btn i),
+#listaFreq i:not(.btn i){
+  color: #4a6aa1;
+}
+
+.btnAltoContrasteOutline{
+  background-color: transparent;
+  border: 1px solid #313a46;
+  color: #313a46;
+  font-weight: 500;
+}
+
+.btnAltoContrasteOutline:hover{
+  border: 1px solid #313a46;
+  background-color: #667991;
+  color: #313a46;
+}
+
+/* .curso-polo{
+  text-shadow: 0 1px #c9c9c9;
+} */
+
+#lancaFreq .card-tipo-conteudo .item-tipo-conteudo:nth-child(odd){
+  background-color: #f5f5f5;
+}
+
+.listagem-tipo-conteudo{
+  border: 1px solid #d9d9d9;
+}
+
+.not-freq-zero{
+  background-color: #d6d9dd80;
+  color: #979797;
+}
+
+.not-freq-legenda-vermelho{
+  background-color: #ef444430;
+  border-top: 2px solid #ef44442e;
+}
+
+.not-freq-legenda-amarelo{
+  background-color: #f59e0b2e;
+  border-top: 2px solid #f59e0b45;
+}
+
+.not-freq-legenda-verde{
+  background-color: #3da45b3b;
+  border-top: 2px solid #3da45b2e;
+}
+
+.not-freq-legenda-azul{
+  background-color: #1c71f938;
+  border-top: 2px solid #1c71f938;
+}
+
+.not-freq-amarelo {
+  background: linear-gradient(0deg,#fdeed3 0,#f7dfb4 60%,#f9e4be)!important;
+}
+
+.not-freq-verde {
+  background: linear-gradient(0deg,#c9e5d3 0,#c9e5d3 60%,#c0e1cb)!important;
+}
+
+.not-freq-vermelho {
+  background: linear-gradient(0deg,#fac0c0 0,#ffd1d1 60%,#fecccc)!important;
+}
+
+.cabecalho-listagem{
+  border-bottom: 1px solid #d5d6da;
+  box-shadow: rgb(0 0 0 / 5%) 0px 2px 2px 0px;
+}
+
+.footer-listagem{
+  border-top: 1px solid #d5d6da;
+  box-shadow: rgb(0 0 0 / 5%) 0px -2px 2px 0px;
+}
+
+.cor-linha-req:hover{
+  background-color: #e1e2e5;
+  /* opacity: 0.8; */
+}
+
+.progress-upload{
+  background-color: rgba(0,0,0,0.5);
+}
+
+.cor-fundo-card{
+  background-color: #fff;
+}
+
+.bordaCorPrincipal{
+  box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+}
+
+.shadow-bibliotecas{
+  box-shadow: 0px 1px 0.375rem 0px #DDD; 
+}
+
+.cor-fundo-contraste{
+  color: white;
+  background-color: #313a46;
+  border-color: #313a46;
+}
+
+#curso_percent_nao_concluido{
+  fill: #c5c5c5;
+}
+
+#curso_percent_em_progresso{
+  stroke: #394452;
+}
+
+#curso_percent_concluido{
+  stroke: #667991;
+}
+
+#circle_cor_card{
+  fill: #ffffffcc;
+}
+
+.porc-concluido i{
+  color: #667991;
+  text-shadow: 0px 0px 4px #888888;
+}
+
+.porc-em-progresso i{
+  color: #394452;
+  text-shadow: 0px 0px 4px #888888;
+}
+
+.porc-nao-concluido i{
+  color: #c5c5c5;
+  text-shadow: 0px 0px 4px #888888;
+}
+
+.fundo-alerta-verde{
+  background: linear-gradient(180deg, rgb(255 255 255) 0%, rgb(255 255 255) 70%, rgb(255 255 255 / 36%) 100%), 
+              radial-gradient(circle, rgba(61, 164, 91, 0) 0%, rgb(61 164 91 / 84%) 70%, rgb(61 164 91) 100%);
+}
+
+.fundo-alerta-vermelho{
+  background: linear-gradient(180deg, rgb(255 255 255) 0%, rgb(255 255 255) 70%, rgb(255 255 255 / 36%) 100%), 
+              radial-gradient(circle, rgba(239,68,68,0) 0%, rgb(239 68 68 / 84%) 70%, rgb(239 68 68) 100%);
+}
+
+.fundo-alerta-amarelo{
+  background: linear-gradient(180deg, rgb(255 255 255) 0%, rgb(255 255 255) 70%, rgb(255 255 255 / 36%) 100%), 
+              radial-gradient(circle, rgba(245, 158, 11, 0) 0%, rgb(245 158 11 / 84%) 70%, rgb(245 158 11) 100%);
+}
+
+.divEmprestimos .row:not(.cor-fundo-principal):not(.nao-zebra):nth-of-type(odd) {
+  background-color: #DDDDDD;
+}
+
+.lista-diario-bordo-separador:not(.lista-diario-bordo-separador:last-child){
+  border-bottom: 1px solid #d6d6d6;
+}
+
+#planoTrabalhoComponent .planoTrabalhoTitle > span {
+  color: #3e3d3e;
+}
+
+#planoTrabalhoComponent .containerChComp .chCompItem > span:last-child {
+  color: #343a40;
+}
+
+#planoTrabalhoComponent .cadastroPlanoTrabalho span:first-child, #planoTrabalhoComponent .divChComp span:first-child {
+  color: #3e3d3e;
+}
+
+#changeModality span {
+  color: #000000a1;
+}
+
+#planoTrabalhoComponent .avaTableRow .newActButton button {
+  color: #444e5a;
+}
+
+#planoTrabalhoComponent .aprovIndicator {
+  background-color: #fff;
+}
+
+.elemento-eventos:not(.elemento-eventos:last-child){
+  border-bottom: 1px solid #00000021;
+}
+
+.data-elemento-eventos{
+  color: #1b4d81;
+}
+
+.icon-div-listagem{
+  background-color: #c7c7c7;
+  border: 1px solid #00000020;
+  box-shadow: #959da533 3px 3px 4px 0px;
+}
+
+.icon-div-listagem i{
+  color: #445770;
+}
+
+.btn-visualiza{
+  color: #828282;
+}
+
+.btn-visualiza:hover{
+  background-color: #f0f0f0;
+  color: #1565c0;
+}
+
+.filtro-situacao-btn.ativo,
+.filtro-style-btn.ativo{
+  background-color: #0000000f;
+}
+
+/* Fim outros elementos */
+
+/* Media queries */
+
+@media (max-width: 991px) {
+
+  .tituloSubmenu{
+    margin-top: 10px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  .cardSubmenu .card-body .row .col-lg-2{
+    border-right: 0px!important;
+  }
+}
+
+/*@media(max-width: 425px) {
+    .divAcessibilidadeWeb {
+		display: none;
+	}
+}
+
+@media(min-width: 426px) {
+    .divAcessibilidadeMobile {
+		display: none;
+	}
+}*/
+/* Fim dos media queries */
+
+
+.corTituloTabelaVideoteca{
+  background-color: #e0e3e7;
+  font-weight: bold;
+}

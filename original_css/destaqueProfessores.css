@@ -1,0 +1,513 @@
+#atalhos_informativos{
+    display: grid;
+    grid-template-columns: repeat(3,minmax(0,1fr));
+}
+
+#atalhos_informativos .card{
+    grid-area: span 1 / span 1;
+    cursor: default;
+}
+
+#atalhos_informativos .card-interno,
+.card-grid-5 .card-interno{
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+#atalhos_informativos .card h2{
+    font-size: 1.275rem;
+}
+
+#atalhos_informativos .card .card-interno h2,
+.card-grid-5 .card .card-interno h2{
+    height: 3rem;
+    font-size: 1.275rem;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+#atalhos_informativos .card .info-title{
+    display: flex;
+    flex-direction: row;
+    margin-top: 0;
+}
+
+#atalhos_informativos .card .info-title i{
+    font-size: 1.275rem;
+    height: fit-content;
+    margin-top: auto;
+    margin-bottom: 0.8rem;
+    margin-right: 10px;
+}
+
+#atalhos_informativos .card div:not(.card-footer):not(.info-title){
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#atalhos_informativos .card p{
+    margin: 0;
+}
+
+#atalhos_informativos .card div i{
+    height: fit-content;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 5px;
+}
+
+.hover-caixa:hover{
+    /* opacity: 0.6; */
+    cursor: pointer;
+}
+
+/* #info_aulas_hoje{
+    grid-area: span 2 / span 1!important;
+} */
+
+#info_desempenho{
+    grid-area: 1 / 1 /span 3 / span 1!important;
+}
+
+.grafico-desempenho{
+    display: flex;
+    flex-direction: row;
+}
+
+.eixos{
+    width: 1px;
+    height: 100%;
+}
+
+.eixo-y-legenda{
+    display: grid;
+    grid-template-columns: repeat(1,minmax(0,1fr));
+    margin-left: auto;
+    /* margin-right: 5px; */
+    height: 100%;
+}
+
+.eixo-y-legenda span{
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 0.75rem;
+    /* font-size: 0.536rem; */
+}
+
+.grafico-desempenho svg{
+    width: 198px; 
+    height: 198px;
+    margin-right: auto;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.grafico-legenda{
+    display: flex;
+    flex-direction: column;
+    margin-top: 8px!important;
+}
+
+.grafico-legenda label{
+    font-size: 0.8rem;
+}
+
+.aulas-hoje-mostradores{
+    margin-top: 10px!important;
+}
+
+.aulas-hoje-mostrador{
+    margin-top: 5px!important;
+}
+
+.aulas-hoje-icones{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 20px!important;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.aulas-hoje-icones i{
+    margin-left: auto;
+    margin-right: auto!important;
+}
+
+.aulas-hoje-icones span{
+    font-size: 0.8rem;
+    display: none;
+}
+
+.aulas-hoje-icone{
+    display: flex;
+    padding: 0.8rem;
+    flex-direction: column;
+    cursor: pointer;
+    text-align: center;
+    width: fit-content;
+    font-size: 1.3rem;
+}
+
+.aulas-hoje-icone:hover i{
+    opacity: 0.75;
+}
+
+.aulas-hoje-frequencia{
+    width: fit-content;
+    margin-inline: auto;
+    padding: 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.aulas-hoje-frequencia:hover{
+    opacity: 0.8;
+}
+
+.card-ant,
+.prox-card{
+    cursor: pointer;
+}
+
+.card-ant:hover,
+.prox-card:hover{
+    opacity: 0.8;
+}
+
+.principal{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.atalho-aulas{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem; 
+    margin-bottom: 1rem;
+}
+
+.componentes-professor{
+    margin-bottom: 0.75rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.card-prof{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0.2375rem;
+    padding: 0.575rem;
+    border-radius: 10px;
+    min-width: 32.5%;
+    max-width: 32.5%;
+}
+
+.info-componente{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.card-prof-titulo{
+    font-weight: 600;
+}
+
+.card-prof-indicador-last{
+    margin-bottom: 15px;
+}
+
+.componente-carga-horaria{
+    margin-top: 15px;
+    margin-left: 0.4rem;
+}
+
+.componente-carga-horaria div p{
+    font-size: 0.97rem;
+    font-weight: 300;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.componente-carga-horaria .icone{
+    width: 20px;
+    margin-right: 5px;
+    display: flex;
+}
+
+.componente-carga-horaria i{
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#info_momento .card-footer{
+    border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.bt-momentos-filtro:first-child{
+    border-bottom-left-radius: 0.5rem;
+}
+
+.bt-momentos-filtro:last-child{
+    border-bottom-right-radius: 0.5rem;
+}
+
+.btn-componente{
+    width: 100%; 
+    padding: 8px;
+    text-align:center; 
+    cursor: pointer; 
+    color: #313a46;
+  }
+  
+  .btn-componente-esquerda{
+    width: 50%; 
+    padding: 8px;
+    text-align:center; 
+    cursor: pointer; 
+    color: #313a46;
+    border-right: 0.2px solid #d8d8d8;
+  }
+  
+  .btn-componente-direita{
+    width: 50%; 
+    padding: 8px;
+    text-align:center; 
+    cursor: pointer; 
+    color: #313a46;
+    border-left: 0.2px solid #d8d8d8;
+  }
+  
+  .btn-componente,
+  .btn-componente-esquerda,
+  .btn-componente-direita{
+    font-weight: 500;
+    color: #888888;
+  }
+  
+  .btn-componente:hover,
+  .btn-componente-esquerda:hover,
+  .btn-componente-direita:hover{
+    color:#18499e;
+    background-color: #dddddd;
+  }
+  
+
+.tipo-componente-azul{
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    font-size: 0.68rem;
+    color: #18499e;
+    padding: 3px;
+    background: #C2D3FF;
+    border-radius: 5px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    margin-bottom: 2%;
+    min-width: 40px;
+}
+
+.tipo-componente-verde{
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    font-size: 0.68rem;
+    color: #07802f;
+    padding: 3px;
+    background: #c2ffc7;
+    border-radius: 5px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    margin-bottom: 2%;
+    min-width: 40px;
+}
+
+.tipo-componente-vermelho{
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    font-size: 0.68rem;
+    color: #800707;
+    padding: 3px;
+    background: #ffc2c2;
+    border-radius: 5px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    margin-bottom: 2%;
+    min-width: 40px;
+}
+
+.tipo-componente-amarelo{
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    font-size: 0.68rem;
+    color: #b77403;
+    padding: 3px;
+    background: #ffe1ae;
+    border-radius: 5px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    margin-bottom: 2%;
+    min-width: 40px;
+}
+
+.indicadores-componente{
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: auto;
+    margin-bottom: 20px;
+    width: 90%;
+}
+
+.linha-indicadores{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0.575rem;
+}
+
+.indicador{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    min-width: 20px;
+}
+
+.indicador i{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.indicador p{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+}
+
+.calendar{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,minmax(0,1fr));
+    gap: 0.375rem;
+}
+
+#card-calendario {
+    grid-column: span 1 / span 1!important;
+}
+
+.card-ava{
+    height: 24.5rem;
+}
+
+.corpo-card-info .my-auto{
+    min-height: 189px;
+}
+
+.corpo-card-info div:not(.corpo-card-info div div){
+    width: 100%; 
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.corpo-card-info div div i{
+    margin-right: 5px;
+    height: fit-content;
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+.corpo-card-info div div p{
+    height: fit-content;
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+#atalhos_informativos .icone-titulo-card-info{
+    width: 30px;
+    height: 30px;
+}
+
+@media (min-width: 1px) and (max-width: 352px) {
+    .grafico-desempenho svg{
+        width: 145px;
+    }
+}
+
+@media (min-width: 1px) and (max-width: 768px) {
+    .aulas-hoje-icones{
+        gap: 5%;
+    }
+    
+    .aulas-hoje-icone{
+        width: 45%;
+    }
+}
+
+@media (min-width: 1px) and (max-width: 1023px) {
+    .atalho-aulas{
+        flex-direction: column;
+    }
+
+    .calendar{
+        grid-template-columns: repeat(1,minmax(0,1fr));
+    }
+
+    .componentes-professor{
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 1px) and (max-width: 1037px) {
+
+    .card-prof{
+        min-width: 99%;
+        max-width: 99%;
+    }
+}
+
+@media (min-width: 1038px) and (max-width: 1190px) {
+
+    .card-prof{
+        min-width: 49%;
+        max-width: 49%;
+    }
+}
+
+@media (min-width: 1024px){
+    .dias {
+        height: 17.4rem;
+    }
+}
+
+/* ==================================================== GRID ==================================================== */
+@media (min-width: 929px) and (max-width: 1255px) {
+    #atalhos_informativos {
+        grid-template-columns: repeat(2,minmax(0,1fr));
+    }
+}
+
+@media (min-width: 774px) and (max-width: 928px) {
+    #atalhos_informativos {
+        grid-template-columns: repeat(2,minmax(0,1fr));
+    }
+}
+
+@media (min-width: 1px) and (max-width: 773px) {
+    #atalhos_informativos {
+        grid-template-columns: repeat(1,minmax(0,1fr))!important;
+    }
+}
+/* ================================================== FIM GRID ================================================== */
+

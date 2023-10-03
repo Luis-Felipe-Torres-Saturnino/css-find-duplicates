@@ -1,0 +1,1436 @@
+/* CSS com os estilos padrão do AVA. */
+
+body {
+  background-color: black;
+  border: 1px solid white;
+  color: white;
+}
+
+/* Barra lateral principal */
+
+.menu-ativo{
+  color: yellow!important;
+}
+
+.sidenav {
+  background-color: black!important;
+  background: black!important;
+  border: 1px solid white;
+}
+
+.sidenav a {
+  color: white;
+}
+
+.sidenav a:active {
+  color: #fff;
+}
+
+.sidenav a:hover {
+  /* background-color: yellow; */
+  color: yellow;
+}
+
+.sidenav a:not(.sidenav a:last-child) {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.sidenav ul li {
+  /* border-bottom: 1px solid rgba(255, 255, 255, 0.25); */
+  color: white;
+}
+
+.sidenav ul li:hover {
+  cursor: pointer;
+  color: yellow;
+}
+
+.sidenavDropdown summary {
+  color: #959ca0;
+}
+
+.sidebar a,
+.navbarAva a {
+  color: white;
+}
+
+.img-novo-menu{
+  display: none;
+}
+
+.divBtnAcessibilidade {
+  color: white;
+}
+
+.sidenavLinkActive {
+  color: #fff !important;
+}
+
+.menuSelecionado {
+  background-color: #1aebff;
+  color: black !important;
+}
+
+.menuSelecionado:hover {
+  background-color: yellow;
+  color: black;
+}
+
+#sidenavItems i {
+  color: yellow !important;
+}
+
+#sidenavItems i:hover {
+  color: black !important;
+}
+
+.rowTituloGeral {
+  border: 1px solid;
+}
+/* Fim da barra lateral principal */
+
+/* Cabeçalho */
+.navbarAva {
+  background: black;
+  border-bottom: 1px solid white;
+}
+
+#navbar #cabecalho_svg{
+  display: none;
+}
+
+#bt-sideMenu #navToggle .fa-times {
+  color: #3ff23f;
+}
+
+hr.hrDiv {
+  background-color: white;
+}
+
+.icon-convite-fix{
+  display: none;
+}
+
+.centralLogo {
+    width: auto;
+    height: 2.875rem;
+    opacity: 0;
+    transition: 0.1s;
+}
+
+.userPicture {
+  width: 3.125rem;
+  height: 3.125rem;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
+.divBtnAcessibilidade button {
+  font-size: 0.75rem;
+  padding: 0.313rem;
+}
+
+.navToggleMenu i {
+  color: #3ff23f;
+}
+
+.cabDescrCurso {
+  color: white;
+  margin-left: 1.25rem;
+  overflow: hidden;
+  text-overflow: hidden;
+  white-space: nowrap;
+}
+
+.slideBottomToTop {
+  background-color: black;
+}
+
+/* SALA DE AULA ============================================================== */
+#cabecalhoTitle .titleText {
+  color: yellow;
+}
+
+#cabecalhoSalaAula .sairSala {
+  background: transparent;
+  border: solid 1px yellow;
+  color: yellow !important;
+}
+
+#progressBarSemanas .abertas span {
+  color: #0063ff;
+}
+
+#progressBarSemanas .abertas {
+  background-color: #0063ff;
+}
+
+.semanaAberta, .semanaAberta .cicloEvento {
+  background-color: #0063ff12;
+  color: #0063ff;
+  border: solid 1px #0063ff;
+}
+
+.semanaFechada,
+.semanaFechada .cicloEvento {
+  border: 1px solid;
+  color: #ffffff70;
+  background-color: #7a80871f;
+  cursor: inherit !important;
+}
+
+.semanaCompleta,
+.semanaCompleta .cicloEvento,
+.semanaItem .cicloEvento.completed {
+  background-color: #3da45b1c;
+  color: #00d13d;
+  border: 1px solid;
+}
+
+.semanaItem.semanaIncompleta,
+.semanaIncompleta .cicloEvento,
+.semanaItem .cicloEvento.incompleto {
+  background-color: #ef444414;
+  color: #ff0000;
+  border: 1px solid;
+}
+
+#parentDiv #containerSeletores {
+  border: 1px solid;
+  background: black;
+}
+
+.seletores .seletorObj:not(:last-of-type) {
+  border-right: 1px solid white;
+}
+
+.seletores .seletorObj.selected {
+  background-color: yellow;
+  color: black !important;
+}
+
+.seletores .seletorObj.readed {
+  color: yellow;
+}
+
+#proxObj, #prevObj {
+  border: 1px solid;
+}
+
+#proxObj i, #prevObj i {
+  color: yellow;
+}
+
+#altSemana .backToSem {
+  color: white;
+  border: 1px solid;
+}
+
+#altSemana .previousSem, 
+#altSemana .nextSem {
+  color: yellow;
+  border: 1px solid;
+}
+
+#expandObjs .expandButton {
+  background-color: black;
+  color: yellow;
+}
+
+#expandObjs > div:first-child {
+  background: linear-gradient(90deg, transparent, 25%, black);
+}
+
+#lerMais:hover {
+  color: yellow !important;
+}
+
+#cabDescrCurso + span {
+  color: yellow;
+}
+/* CONTAINER TABS */
+.groupPages {
+  background-color: black;
+  border: white 1px solid;
+}
+
+.containerTabs .tabs > div {
+  background-color: black;
+  color: white;
+  border: white 1px solid;
+}
+
+.containerTabs .tabs > div.sel {
+  background-color: black;
+  color: yellow;
+  border: yellow 1px solid;
+}
+/* fim CONTAINER TABS fim */
+/* FIM SALA DE AULA ============================================================== */
+
+
+.dropdownMenuPerfil {
+  margin: -1rem;
+  padding: 1rem;
+  background-color: black;
+}
+
+.dropdownMenuPerfil .menuPerfilNome {
+  font-weight: bold;
+}
+
+.dropdownMenuPerfil .menuPerfilRaIngresso,
+.menuPerfilEmail {
+  font-size: 0.75rem;
+}
+
+.containerPrincipalAva {
+  outline: none;
+  overflow-x: hidden;
+}
+
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -1px;
+}
+
+.dropdownPerfil {
+  background-color: black;
+}
+
+.dropdownPerfil a {
+  border: 1px solid;
+}
+
+.dropdownPerfil li a:hover {
+  background-color: yellow !important;
+  color: black !important;
+}
+
+.tituloAcessibilidade {
+  color: yellow;
+}
+
+.menuPerfilNome {
+  color: yellow;
+}
+
+.card-absolute .card-header{
+  border-bottom: 1px solid white;
+}
+
+.linha-vertical{
+  background-color: #ffffff86;
+}
+
+.elemento:not(.elemento:last-child){
+  border-bottom: 1px solid #ffffff86;
+}
+
+.elemento:hover{
+  box-shadow: rgba(255, 255, 255, 0.39) 0px 1.95px 2.6px, rgba(255, 255, 255, 0.39) 0px -1.95px 2.6px;
+  color: yellow;
+}
+
+/* Fim do cabeçalho */
+
+/* Área (div) principal do AVA */
+
+.navigation-overlay {
+  background-color: #00000073;
+  opacity: 1;
+}
+
+.card {
+  background-color: black;
+  border: 1px solid white !important;
+  color: white;
+}
+
+.btn-componente.ativo,
+.btn-componente-esquerda.ativo,
+.btn-componente-direita.ativo{
+    color: black!important;
+    background-color: yellow;
+}
+
+.card-footer{
+    border-top: 1px solid #fff;
+}
+.overlay-imagem-curso-card-redirecionamento .badgeAva{
+    background-color: #ffff00!important;
+    color: black!important;
+}
+
+.divisor-card-redirecionamento{
+    background: #ffffff;
+    box-shadow: rgb(255 255 255 / 24%) 0px 0px 2px;
+}
+
+/* Fim da área (div) principal do AVA */
+
+/* Barra de rolagem customizada */
+*::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 0.375rem rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 0.375rem rgba(0, 0, 0, 0.3);
+  background-color: black;
+}
+
+*::-webkit-scrollbar {
+  background-color: white;
+}
+
+*::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 0.375rem rgba(0, 0, 0, 0.3);
+  background-color: white;
+}
+/* Fim da barra de rolagem customizada */
+
+/* Outros elementos */
+.tituloGeral {
+  color: yellow;
+}
+
+.subTituloCor {
+  color: yellow;
+}
+
+.corIcon {
+  color: black;
+}
+
+.tituloSubmenu {
+  color: white;
+}
+
+.cardSubmenu i {
+  color: yellow !important;
+}
+
+.card-ava {
+  background: black;
+  border: 1px solid white!important;
+}
+
+.card-ava-alt {
+  background: black;
+  color: #fff;
+}
+
+.card-ava-alt:hover {
+  border-color: yellow;
+  background-color: yellow;
+  color: black;
+}
+
+.item-card-ava-2 div {
+  color: white;
+}
+
+/* .item-card-ava-2 div {
+    padding: 0 1.125rem;
+} */
+
+.item-card-ava-2 div:hover {
+  background-color: yellow;
+  color: black !important;
+}
+
+.badgeAva {
+  border: 1px solid white;
+  color: white;
+  background-color: black;
+}
+
+.imgBordaAltoContraste {
+  border: 1px solid white;
+}
+
+.alert {
+  color: white;
+  background-color: black;
+  border: 1px solid white;
+}
+
+.divDropdown {
+  z-index: 1;
+}
+
+.btnAltoContraste {
+  color: white;
+  background-color: black;
+  border: 1px solid white;
+}
+
+.btnAltoContraste:hover {
+  color: black;
+  background-color: yellow;
+  border: 1px solid yellow;
+}
+
+.corFundoAltoContraste {
+  background-color: black;
+}
+
+.form-control,
+.form-select {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+}
+
+.form-control:focus,
+.form-control:disabled {
+  background-color: black;
+  color: white;
+  border-color: white;
+  box-shadow: none;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white !important;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: white;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: white;
+}
+
+.btn:focus {
+  box-shadow: none;
+}
+
+.table tbody tr td:not(tr.cor-fundo-contraste td){
+  color: var(--white);
+}
+
+.paginacao-ava .pagination > li > a,
+.paginacao-ava .pagination > li.disabled > a {
+  background-color: black;
+  color: var(--white);
+  border: 1px solid white;
+}
+
+.paginacao-ava .pagination > li:not(.active) > a:hover {
+  background-color: yellow;
+  color: black;
+  border: 1px solid yellow;
+}
+
+.paginacao-ava .pagination > li.active > a {
+  background-color: #1aebff;
+  color: black;
+  border: 1px solid #1aebff;
+  cursor: default;
+}
+
+.modal-content {
+  background-color: black;
+  border: 1px solid white;
+}
+
+/*.modal-dialog {
+    border: 1px solid white;
+}*/
+
+.modal-content > div:first-child {
+  border-bottom: 1px solid white;
+}
+
+.cr-slider {
+  background-color: white !important;
+}
+
+.img-logo-uniube-1:before {
+  content: url(/template/img/logo_uniube_novo_branca.png);
+}
+
+.img-logo-google:before {
+  content: url(/imagem/google-white-logo.png);
+}
+
+.a-hover-sublinhado:hover {
+  color: yellow;
+  text-decoration: underline;
+}
+
+th {
+  color: white;
+}
+
+iframe {
+  border: 1px solid white;
+}
+
+.boxContainer {
+  background: black;
+}
+
+.boxSalaAula {
+  background: black;
+  border: 1px solid white;
+}
+
+.boxSalaAula .titulo {
+  background: black;
+  color: yellow;
+}
+
+.separador h1 {
+  border: 1px solid yellow;
+  color: yellow;
+}
+
+.divUnidade::after {
+  border: 1px solid white;
+  background-color: black;
+}
+
+.badgeTipoUnidade {
+  border: 1px solid white;
+}
+
+.divArrowDown i {
+  color: yellow;
+}
+
+.divUnidade {
+  border: 1px solid white;
+}
+
+#containerObjetos .divUnidade {
+  border: unset;
+}
+
+.divImagemTopo span {
+  color: #1aebff;
+}
+
+.original {
+  color: yellow;
+}
+
+.like {
+  color: #3ff23f;
+}
+
+.deslike {
+  color: red;
+}
+
+.tituloCompSalaAula {
+  background-color: black;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.form-control:disabled, .form-control[readonly]{
+  background-color: #ffffff47!important;
+}
+
+/* ============ DESTAQUES ============ */
+
+/* BADGES INFORMATIVOS */
+
+	/* CLASSE PARA PADRONIZAR AS CORES DOS BADGES */
+	.badge-informativo{
+		border: 1px solid #fff;
+	}
+
+/* FIM BADGES INFORMATIVOS */
+
+.legenda-filtro-ativo{
+    color: black!important;
+    background-color: yellow!important;
+}
+
+/* .legenda-filtro{
+    background-color: black!important;
+    color: white!important;
+    border: 1px solid white;
+} */
+
+.legenda-azul{
+    color: #4789f2;
+    border: 1px solid white;
+}
+
+.legenda-verde{
+	color: #6effbe;
+    border: 1px solid white;
+}
+
+.legenda-vermelho{
+	color: #ef4444;
+    border: 1px solid white;
+}
+
+.legenda-laranja{
+	color: #f59e0b;
+    border: 1px solid white;
+}
+
+.not-vermelho{
+	color: #ef4444!important;
+}
+
+.not-verde{
+	color: #6effbe!important;
+}
+
+.not-laranja{
+	color: #f59e0b!important;
+}
+
+.not-azul{
+	color: #4789f2!important;
+}
+
+.card-interior{
+    background: black!important;
+    border: 1px solid white!important;
+}
+
+.user-card-interior{
+    border: 1px solid white!important;
+}
+
+.sae-card,
+.comunicacao-card {
+  padding: 1.125rem !important;
+}
+
+.btn-card {
+  background: black !important;
+  border: 1px solid white;
+}
+
+.card-interior-not,
+.card-interior-sem-not{
+    background-color: black!important;
+    border: 1px solid white!important;
+}
+
+.card-interior-sem-not h2,
+.card-interior-sem-not p {
+  color: white;
+}
+
+.calendario{
+    border: 1px solid white!important;
+}
+
+.mes {
+  background-color: black !important;
+  border-bottom: 0.5px solid white;
+  color: yellow !important;
+}
+
+.mes .data h2 {
+  color: yellow !important;
+}
+
+.dia-atual {
+  background-color: black !important;
+  border: 1px solid white !important;
+}
+
+.card-interior-azul,
+.card-interior-verde,
+.card-interior-vermelho,
+.card-interior-laranja {
+  color: black !important;
+  font-weight: 600;
+}
+
+/* .legenda-azul,
+.legenda-verde,
+.legenda-vermelho,
+.legenda-laranja {
+  color: white !important;
+} */
+
+.mobile-user-card-text {
+  color: white !important;
+}
+.svg-interno{
+	display: none;
+}
+
+.neon-effect-in-amarelo {
+    color: #f59e0b; 
+    border: 2px solid #f59e0b;
+  }
+  
+  .neon-effect-in-roxo {
+    color: #ba33ff; 
+    border: 2px solid #ba33ff;
+  }
+  
+  .neon-effect-in-azul {
+    color: #1c71f9; 
+    border: 2px solid #1c71f9;
+  }
+  
+  .neon-effect-in-verde {
+    color: #3da45b; 
+    border: 2px solid #3da45b;
+  }
+  
+  .neon-effect-in-laranja {
+    color: #ef7b44; 
+    border: 2px solid #ef7b44;
+  }
+  
+  .neon-effect-in-vermelho {
+    color: #ef4444; 
+    border: 2px solid #ef4444;
+  }
+
+/* ========== FIM DESTAQUES ========== */
+
+/* =========== DISCIPLINAS =========== */
+
+.tipo-componente-teorica,
+.tipo-componente-pratica,
+.tipo-componente-ead {
+  background-color: transparent !important;
+  color: white !important;
+}
+
+.tipo-componente-piac {
+  border: 0px !important;
+}
+
+.badgeComponente {
+  color: white !important;
+}
+
+.btn-componente,
+.btn-componente-esquerda,
+.btn-componente-direita {
+  color: white !important;
+}
+
+.btn-componente:hover,
+.btn-componente-esquerda:hover,
+.btn-componente-direita:hover {
+  color: black !important;
+}
+
+.bg-success {
+  background-color: #3ff23f !important;
+}
+
+.bg-warning {
+  background-color: yellow !important;
+}
+
+.bg-danger {
+  background-color: red !important;
+}
+
+.bg-progresso-ead {
+  background-color: #00ffe7 !important;
+}
+
+.rating-div {
+  background-color: transparent !important;
+}
+
+.card-seletor-componente {
+  border: 1px solid #fff;
+}
+
+.linha-seletor .ativo, .linha-seletor .ativo2 {
+  border: 1px solid #fff;
+  color: #3ff23f;
+}
+
+.linha-seletor .inativo, .linha-seletor .inativo2 {
+  border: 1px solid #fff;
+}
+
+.linha-badge-anos .badge {
+  border: 1px solid #fff;
+}
+
+.linha-badge-anos .ativo {
+  color: red;
+}
+
+.linha-badge-anos .inativo {
+  color: #3ff23f;
+}
+
+.periodo-componente {
+  background-color: transparent !important;
+  color: white !important;
+  border: 1px solid #fff;
+}
+
+.card-seletor-componente .card-footer {
+  border-top: 1px solid #fff;
+}
+
+.painel .buttonMain {
+  background-color: yellow;
+  color: black;
+  border-color: yellow;
+}
+
+/* ========= FIM DISCIPLINAS ========= */
+
+
+.card{
+    border-radius: 0.75rem;
+    flex: 1;
+}
+
+.btn-acesso{
+    border-top: 1px solid white;
+}
+
+#card-curso .card-title{
+    text-shadow: 0px 0px 17px rgb(0 0 0);
+  }
+
+#curso_percent_nao_concluido{
+    fill: red;
+}
+
+#curso_percent_em_progresso{
+    stroke: yellow;
+}
+
+#curso_percent_concluido{
+    stroke: #1AEBFF;
+}
+
+#circle_cor_card{
+    fill: black;
+}
+
+.porc-concluido i{
+    color: #1AEBFF;
+}
+
+.porc-nao-concluido i{
+    color: red;
+}
+
+.porc-em-progresso i{
+  color: yellow;
+}
+
+.div-troca-curso i{
+    color: #3FF23F;
+}
+
+#card-curso{
+    background-image: none!important;
+}
+
+#aulasRemotasAoVivo tr th,
+#aulasRemotasGravadas tr th,
+#aulasRemotasNaoPublicadas tr th {
+  background-color: transparent !important;
+  color: yellow !important;
+}
+
+#divAcessibilidadeMobile_BT div i {
+  color: yellow !important;
+}
+
+#atalhos_informativos .card .card-interno{
+    border: 1px solid white;
+}
+
+#atalhos_informativos .card h2:first-child,
+#listagemOportunidades .card h2:first-child,
+.avaModalDialog .card h2:first-child{
+  color: yellow;
+}
+
+.card h2.titulo-cor:first-child,
+.elemento h2.titulo-cor,
+span.titulo-cor,
+i.titulo-cor,
+label.titulo-cor{
+  color: yellow;
+}
+
+.aulas-hoje-frequencia{
+    border: 1px solid white;
+}
+
+.card-interno .aulas-hoje-mostradores i,
+.card-interno .aulas-hoje-icones i{
+  color: yellow;
+}
+
+.divComponentesProfessor .conteudo-botoes .indicador{
+    color: #fff;
+}
+
+.eixos{
+    fill: #eff0f1;
+}
+
+/* =================================== FREQUÊNCIA =================================== */
+
+.img-barra-frequencia-url{
+    content: url("/programas/frequencia/imagens/barraporcentagem_white_png_32.png");
+}
+
+/* ================================= FIM FREQUÊNCIA ================================= */
+
+/* ============================================ GESTÃO - ALUNOS ============================================ */
+
+/* LISTAGEM CURSOS */
+#listagemAlunos #legendaListagem, #listagemCursos #legendaListagem {
+  background-color: #000;
+  border: 1px solid white;
+}
+
+.avaDivTable .avaTableRow {
+  background-color: #000;
+  border: 1px solid white;
+  border-inline: 1px solid white !important;
+}
+
+#listagemCursos #totalCountsAlunos {
+  background-color: black;
+    border: 1px solid white;
+}
+
+.avaDivTable .avaTableRow:hover {
+  background-color: yellow;
+  color: black;
+}
+
+.avaDivTable .avaHeadTable {
+  border: 1px solid white;
+  color: yellow !important;
+  background: none !important;
+  background-color: #000000;
+}
+
+/* LISTAGEM MOVIMENTOS */
+.avaDivTable > .avaTableRow:hover {
+  background-color: black !important;
+  color: white;
+} 
+
+#listagemMovimentos #searchAlunoMov {
+  background-color: black;
+  border: 1px solid white;
+}
+
+#movDestaques .cardMovDestaque {
+  background-color: black;
+    border: 1px solid white;
+    border-right-color: yellow !important;
+}
+
+#movDestaques .cardMovDestaque .titleCardMov {
+  color: white;
+}
+
+#movDestaques .cardMovDestaque .icon {
+  background-color: yellow !important;
+}
+
+#movDestaques .cardMovDestaque .icon i {
+  color: black !important;
+}
+
+#movDestaques .cardMovDestaque .countMov {
+  color: yellow !important;
+}
+
+#movDestaques .cardMovDestaque .progressBarMov .barMov div {
+  background-color: yellow !important;
+}
+
+/* LISTAGEM DE ALUNOS */
+#listagemAlunos .rowAluno .alunoDesc {
+  color: #000000c7;
+}
+
+/* PRONTUÁRIO DO ALUNO */
+#detalhesAlunos #headeDetAlunos #headeHeade {
+  background: inherit !important;
+  background-color: black !important;
+  border: 1px solid white;
+}
+
+#detalhesAlunos #headeDetAlunos #headeHeade span:not(.infoNome span:last-child) {
+  color: yellow !important;
+}
+
+#detalhesAlunos #headeDetAlunos #headeHeade .infoNome span:last-child {
+  color: white;
+}
+
+#detalhesAlunos #contentDetAlunos #headExtends {
+  background-color: black;
+  color: white !important;
+  border: 1px solid white;
+}
+
+#detalhesAlunos #headeDetAlunos .infoNome span:last-child {
+  color: #1f2733e0;
+}
+
+#detalhesAlunos #headeDetAlunos img {
+  border: 3px solid #fff;
+}
+
+#contentDetAlunos #headExtends #freqGeral, #contentDetAlunos #headExtends #pontGeral {
+  background-color: black;
+    border: 1px solid white;
+}
+
+#contentDetAlunos #headExtends .itemDado {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+}
+
+#detalhesAlunos #headeDetAlunos #buttonsHead button {
+  color: #3a414c;
+}
+
+#detalhesAlunos #headeDetAlunos #buttonsHead button:hover {
+  background-color: #00000021;
+}
+
+#contentDetAlunos #bodyDetAlunos .sectionData {
+  background-color: black;
+  border: 1px solid white;
+}
+
+#contentDetAlunos #bodyDetAlunos .sectionTittle {
+  color: yellow;
+}
+
+#detalhesAlunos .avaDivTable .avaTableRow:nth-child(odd) {
+  background-color: black !important;
+}
+
+#detalhesAlunos .avaDivTable .avaHeadTable {
+  color: #1f2733e0;
+}
+
+#detalhesAlunos #headeDetAlunos #buttonsHead button {
+  background-color: black;
+  border: 1px solid white !important;
+  color: white;
+}
+
+#detalhesAlunos #headeDetAlunos #buttonsHead button:hover {
+  background-color: yellow;
+  color: black;
+}
+
+#contentDetAlunos #menuButtons .menuOption {
+  background: none !important;
+  background-color: black !important;
+  border: 1px solid white;
+}
+
+#contentDetAlunos #menuButtons .menuOption span, #contentDetAlunos #menuButtons .menuOption i {
+  color: yellow;
+}
+
+#detalhesAlunos .progress {
+  background-color: black !important;
+  border: 1px solid white !important;
+}
+
+#detalhesAlunos .progress-bar {
+  background-color: yellow !important;
+  color: black !important;
+}
+
+/* ====================================== -FIM- GESTÃO - ALUNOS -FIM- ====================================== */
+
+.progress-upload{
+    background-color: rgba(255,255,0,0.8);
+}
+
+.form-check-input:focus {
+  border-color: yellow;
+  outline: 0;
+  box-shadow: 0 0 0 0.15rem rgb(250, 250, 0);
+}
+.form-check-input:checked {
+  background-color: rgba(250, 250, 0, 0.8);
+  border-color: white;
+}
+.form-check-input {
+  background-color: white;
+  border-color: white;
+}
+
+.card-agendamento-avaliacao {
+  background-color: transparent !important;
+}
+
+.diarios .periodo-componente{
+    color: yellow!important;
+    border-color: yellow;
+}
+
+.not-freq-verde{
+    background-color: black!important;
+    border: 1px solid #3da45b;
+}
+
+.not-freq-amarelo{
+    background-color: black!important;
+    border: 1px solid #f59e0b;
+}
+
+.not-freq-vermelho{
+    background-color: black!important;
+    border: 1px solid #ef4444;
+}
+
+.not-freq-zero{
+    background-color: black!important;
+    border: 1px solid white;
+}
+
+#lancaFreq .info-aluno,
+#listaFreq .info-aluno {
+    border-bottom: 1px solid white;
+}
+
+#lancaFreq i:not(.btn i),
+#listaFreq i:not(.btn i){
+    color: yellow;
+}
+
+.dependencia {
+    border: 1px solid #ef4444;
+    border-radius: 3px;
+    padding: 1px;
+}
+
+.btn-danger {
+    color: #fff!important;
+    background-color: #dc3545!important;
+    border-color: #dc3545!important;
+}
+
+.btnAltoContraste{
+  background-color: transparent!important;
+  color: yellow!important;
+  border: 1px solid yellow!important;
+}
+
+.btnAltoContraste:hover{
+  background-color: yellow!important;
+  color: black!important;
+  border: 1px solid yellow!important;
+}
+
+.card-tipo-conteudo .item-tipo-conteudo{
+    border-bottom: 1px solid white;
+}
+
+.listagem-tipo-conteudo{
+  border: 1px solid white;
+}
+
+.not-freq-legenda-vermelho{
+  border-top: 2px solid #ef4444;
+}
+
+.not-freq-legenda-amarelo{
+  border-top: 2px solid #f59e0b;
+}
+
+.not-freq-legenda-verde{
+  border-top: 2px solid #3da45b;
+}
+
+.not-freq-legenda-azul{
+  border-top: 2px solid #1c71f9;
+}
+
+.not-freq-zero .not-freq-legenda-vermelho,
+.not-freq-zero .not-freq-legenda-amarelo,
+.not-freq-zero .not-freq-legenda-verde{
+    border-top: 2px solid white;
+}
+
+.cabecalho-listagem{
+    border-bottom: 2px solid white;
+}
+
+#lancaFreq .card:first-child{
+    margin-bottom: 0!important;
+}
+
+.cor-linha-req:hover{
+    background-color: yellow;
+    color: black!important;
+}
+
+.cor-linha-req:hover td {
+  color: black !important;
+  opacity: 1 !important;
+}
+
+.btn:hover {
+  opacity: 1 !important;
+}
+
+.bordaContraste {
+  border: 1px solid white !important;
+}
+
+.cor-fundo-contraste {
+  color: black;
+  background-color: yellow;
+  border-color: yellow;
+}
+
+.cor-fundo-contraste hr{
+  background-color: black;
+}
+
+.corTituloTabelaVideoteca {
+  background-color: yellow;
+  border-color: yellow;
+  font-weight: bold;
+}
+
+.corTituloTabelaVideoteca td {
+  color: black !important;
+}
+
+.listaBuscaTextual {
+  background-color: yellow;
+  color: black !important;
+}
+
+.listaBuscaTextual li:hover {
+    background-color: black ;
+    color: yellow !important;
+}
+
+.divEmprestimos .row:not(.cor-fundo-principal):not(.nao-zebra):nth-of-type(odd) {
+    color: black;
+    background-color: yellow;
+  }
+
+#curso_percent_nao_concluido{
+    fill: red;
+}
+
+#curso_percent_em_progresso{
+    stroke: yellow;
+}
+
+#curso_percent_concluido{
+    stroke: #1AEBFF;
+}
+
+#circle_cor_card{
+    fill: black;
+}
+
+.porc-concluido i{
+    color: #1AEBFF;
+}
+
+.porc-nao-concluido i{
+    color: red;
+}
+
+.porc-em-progresso i{
+  color: yellow;
+}
+
+.lista-diario-bordo-separador:not(.lista-diario-bordo-separador:last-child){
+  border-bottom: 1px solid #fff;
+}
+
+#dropdownMenuPerfil #perfilContent {
+  background-color: black;
+  border: 1px solid white;
+}
+
+#dropdownMenuPerfil .dropDownPerfilButton {
+  border: 1px solid white;
+}
+
+.elemento-eventos{
+  border-bottom: 1px solid white;
+}
+
+.elemento-eventos:hover,
+.elemento-eventos:hover .data-elemento-eventos{
+  background-color: yellow;
+  color: black;
+  opacity: 0.9;
+}
+
+.data-elemento-eventos{
+  color: yellow;
+}
+
+.icon-div-listagem{
+  background-color: black;
+  border: 1px solid white;
+}
+
+.icon-div-listagem i{
+  color: yellow;
+}
+
+.btn-visualiza{
+  color: yellow;
+}
+
+.btn-visualiza:hover{
+  background-color: yellow;
+  color: black;
+}
+.filtro-situacao-btn{
+  background-color: #0000000f;
+}
+
+.filtro-situacao-btn.ativo,
+.filtro-style-btn.ativo{    
+  background-color: #ffff0091;
+  color: black;
+}
+
+/* Fim outros elementos */
+
+
+/* acqf */
+
+.questoesACQF p > span > span{
+    color: white !important;
+}
+
+/* fim acqf */
