@@ -1,0 +1,76 @@
+[
+  {
+    "tag": "main",
+    "style": {
+      "font-size": "10px"
+    },
+    "classes": [
+      "amogus"
+    ]
+  },
+  {
+    "tag": "span",
+    "style": {
+      "font-size": "50px"
+    },
+    "classes": []
+  },
+  {
+    "tag": "p",
+    "style": {
+      "background-color": "red"
+    },
+    "classes": []
+  },
+  {
+    "tag": "main",
+    "style": {},
+    "classes": []
+  },
+  {
+    "tag": "p",
+    "style": {},
+    "classes": [
+      "text"
+    ]
+  },
+  {
+    "tag": "span",
+    "style": {},
+    "classes": [
+      "notext"
+    ]
+  },
+  {
+    "tag": "main",
+    "style": {
+      "font-size": "10px"
+    },
+    "classes": [
+      "amogus"
+    ]
+  },
+  {
+    "tag": "canvas",
+    "style": {
+      "background-image": "amogus"
+    },
+    "classes": []
+  },
+  {
+    "tag": "aside",
+    "style": {},
+    "classes": [
+      "we-live",
+      "forever"
+    ]
+  },
+  {
+    "tag": "div",
+    "style": {},
+    "classes": [
+      "we-work",
+      "forever"
+    ]
+  }
+]
